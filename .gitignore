@@ -21,3 +21,17 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/components/Trial.jsx
+src/App.js
+public/favicon.ico
+.gitignore
+public/manifest.json
+public/logo512.png
+public/logo192.png
+public/index.html
+public/favicon.ico
+src/App.js
+public/logo192.png
+public/favicon.ico
+public/logo512.png
+src/logo.svg
