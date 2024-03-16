@@ -17,11 +17,11 @@ function Navbar() {
 
   return (
     <div
-      className={`overallContainer box-border w-screen h-screen pt-20 px-10 transition-all duration-300 text-slate-400 ${
-        isHovered ? "bg-gradient-to-r from-overlay" : "bg-transparent"
+      className={`overallContainer box-border w-fit h-screen pt-20 pl-10 transition-all duration-300 text-slate-400 ${
+        isHovered ? "w-screen bg-overlay " : "bg-transparent"
       }`}
     >
-      <div className="logoContainer box-border w-20 h-fit">
+      <div className="logoContainer box-border w-fit h-fit">
         <img
           src="/images/logo.jpg"
           alt="logo"
@@ -42,7 +42,7 @@ function Navbar() {
       </div>
 
       <div
-        className="navOptionsContainer box-border w-1/6 h-4/6 mt-9 flex flex-col items-start gap-8 px-3"
+        className="navOptionsContainer box-border w-fit h-4/6 mt-9 flex flex-col items-start gap-8 px-3"
         onMouseLeave={() => setIsHovered(false)}
       >
         <div
@@ -82,9 +82,7 @@ function Navbar() {
           />
 
           <p
-            className={`heading text-2xl font-medium cursor-pointer ${
-              isHovered ? "flex" : "hidden"
-            }`}
+            className="heading text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/explore");
             }}
@@ -104,13 +102,11 @@ function Navbar() {
           />
 
           <p
-            className={`heading text-2xl font-medium cursor-pointer ${
-              isHovered ? "flex" : "hidden"
-            }`}
-            style={{ visibility: isHovered ? "visible" : "hidden" }}
+            className="heading text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/home");
             }}
+            style={{ visibility: isHovered ? "visible" : "hidden" }}
           >
             Home
           </p>
@@ -126,13 +122,11 @@ function Navbar() {
           />
 
           <p
-            className={`heading text-2xl font-medium cursor-pointer ${
-              isHovered ? "flex" : "hidden"
-            }`}
-            style={{ visibility: isHovered ? "visible" : "hidden" }}
+            className="heading text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/shows");
             }}
+            style={{ visibility: isHovered ? "visible" : "hidden" }}
           >
             TV
           </p>
@@ -148,19 +142,37 @@ function Navbar() {
           />
 
           <p
-            className={`heading text-2xl font-medium cursor-pointer ${
-              isHovered ? "flex" : "hidden"
-            }`}
-            style={{ visibility: isHovered ? "visible" : "hidden" }}
+            className="heading text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/movies");
             }}
+            style={{ visibility: isHovered ? "visible" : "hidden" }}
           >
             Movies
           </p>
         </div>
 
-        <div className="optionDiv box-border w-full h-6 flex items-center gap-8 hover:text-slate-50 transition-all duration-300">
+        <div className="optionDiv box-border w-full h-6 flex items-center gap-8 hover:text-slate-50 transition-all duration-300 ">
+          <PuzzleIcon
+            className="w-6 h-6 cursor-pointer"
+            onMouseEnter={() => setIsHovered(true)}
+            onClick={() => {
+              navigate("/sports");
+            }}
+          />
+
+          <p
+            className="heading text-2xl font-medium cursor-pointer"
+            onClick={() => {
+              navigate("/sports");
+            }}
+            style={{ visibility: isHovered ? "visible" : "hidden" }}
+          >
+            Sports
+          </p>
+        </div>
+
+        <div className="optionDiv box-border w-full h-6 flex items-center gap-8 hover:text-slate-50 transition-all duration-300 ">
           <MenuIcon
             className="w-6 h-6 cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
@@ -168,14 +180,13 @@ function Navbar() {
               navigate("/categories");
             }}
           />
+
           <p
-            className={`heading text-2xl font-medium cursor-pointer ${
-              isHovered ? "flex" : "hidden"
-            }`}
-            style={{ visibility: isHovered ? "visible" : "hidden" }}
+            className="heading text-2xl font-medium cursor-pointer"
             onClick={() => {
               navigate("/categories");
             }}
+            style={{ visibility: isHovered ? "visible" : "hidden" }}
           >
             Categories
           </p>
@@ -186,38 +197,3 @@ function Navbar() {
 }
 
 export default Navbar;
-/*
-
-
-        
-
-        
-
-        
-
-        <div
-          className="optionDiv box-border w-full h-6 flex items-center gap-8 bg-teal-500  transition-all duration-300 "
-          onClick={() => {
-            navigate("/sports");
-          }}
-        >
-          <PuzzleIcon
-            className={`w-6 h-6 cursor-pointer hover:text-slate-50 ${
-              isHovered ? "flex text-slate-50 " : ""
-            }`}
-            onMouseEnter={() => setIsHovered(true)}
-            onClick={() => {
-              navigate("/movies");
-            }}
-          />
-
-          <p
-            className={`heading text-2xl font-medium cursor-pointer ${
-              isHovered ? "flex text-slate-50 " : "hidden"
-            }`}
-            style={{ visibility: isHovered ? "visible" : "hidden" }}
-          >
-            Sports
-          </p>
-        </div>
-*/

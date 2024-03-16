@@ -18,7 +18,12 @@ function Footer() {
           >
             About us
           </p>
-          <p className="link2 px-2 text-slate-500 text-base font-normal cursor-pointer">
+          <p
+            className="link2 px-2 text-slate-500 text-base font-normal cursor-pointer"
+            onClick={() => {
+              navigate("/careers");
+            }}
+          >
             Careers
           </p>
         </div>
@@ -34,18 +39,23 @@ function Footer() {
         </div>
 
         <div className="infoDiv">
-          <p
-            className="heading p-2 text-slate-100 text-lg font-medium"
-            onClick={() => {
-              navigate("/about-us");
-            }}
-          >
+          <p className="heading p-2 text-slate-100 text-lg font-medium">
             Need help
           </p>
-          <p className="link1 px-2 text-slate-500  text-base font-normal cursor-pointer">
+          <p
+            className="link1 px-2 text-slate-500  text-base font-normal cursor-pointer"
+            onClick={() => {
+              navigate("/visit-help-center");
+            }}
+          >
             Visit help center
           </p>
-          <p className="link2 px-2 text-slate-500 text-base font-normal cursor-pointer">
+          <p
+            className="link2 px-2 text-slate-500 text-base font-normal cursor-pointer"
+            onClick={() => {
+              navigate("/share-feedback");
+            }}
+          >
             Share Feedback
           </p>
         </div>
@@ -59,12 +69,17 @@ function Footer() {
               src="/images/fblogo.jpg"
               alt="fb logo"
               className="box-border w-12 h-16"
-              onClick={()=>{console.log('clicked')}}
+              onClick={() => {
+                navigate("/fb-page");
+              }}
             />
             <img
               src="/images/xlogo.jpg"
               alt="twitter logo"
               className="box-border w-12 h-16"
+              onClick={() => {
+                navigate("/X-page");
+              }}
             />
           </div>
         </div>
@@ -80,11 +95,17 @@ function Footer() {
             src="/images/googleplaystore.jpg"
             alt="googleplaystore logo"
             className="box-border w-30 h-20"
+             onClick={() => {
+                navigate("/google-playstore");
+              }}
           />
           <img
             src="/images/appstore.png"
             alt="appstore logo"
             className="box-border w-30 h-20"
+             onClick={() => {
+                navigate("/app-playstore");
+              }}
           />
         </div>
       </div>

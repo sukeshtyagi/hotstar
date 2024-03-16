@@ -37,3 +37,7 @@ public/logo512.png
 src/logo.svg
 src/App.js
 .gitignore
+src/components/Home.jsx
+src/App.js
+src/App.js
+src/components/sharedComponents/Navbar.jsx
