@@ -5,7 +5,7 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <div className="container box-border flex flex-col p-0">
-      <div className="upperDiv box-border flex align-center justify-start gap-56">
+      <div className="upperDiv box-border flex align-center justify-start gap-52">
         <div className="infoDiv box-border flex flex-col p-0">
           <p className="heading p-2 text-slate-100  text-lg font-medium">
             Company
@@ -29,7 +29,7 @@ function Footer() {
         </div>
 
         <div className="infoDiv">
-          <p className="heading p-2 text-slate-100 text-lg font-medium">
+          <p className="heading p-2 text-slate-100 w-max text-lg font-medium">
             View Website in
           </p>
           <div className="flex items-center gap-2 pl-3 text-slate-500 font-normal">
@@ -43,7 +43,7 @@ function Footer() {
             Need help
           </p>
           <p
-            className="link1 px-2 text-slate-500  text-base font-normal cursor-pointer"
+            className="link1 px-2 text-slate-500 w-max text-base font-normal cursor-pointer"
             onClick={() => {
               navigate("/visit-help-center");
             }}
@@ -95,17 +95,17 @@ function Footer() {
             src="/images/googleplaystore.jpg"
             alt="googleplaystore logo"
             className="box-border w-30 h-20"
-             onClick={() => {
-                navigate("/google-playstore");
-              }}
+            onClick={() => {
+              navigate("/google-playstore");
+            }}
           />
           <img
             src="/images/appstore.png"
             alt="appstore logo"
             className="box-border w-30 h-20"
-             onClick={() => {
-                navigate("/app-playstore");
-              }}
+            onClick={() => {
+              navigate("/app-playstore");
+            }}
           />
         </div>
       </div>
