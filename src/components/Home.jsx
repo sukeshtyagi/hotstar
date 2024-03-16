@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./sharedComponents/Navbar";
 import Footer from "./sharedComponents/Footer";
+import Cards from "./sharedComponents/Cards";
 
 function Home() {
   return (
@@ -9,9 +10,9 @@ function Home() {
         <Navbar />
       </div>
 
-      <div className="rightDiv ml-64 w-full	h-fit">
+      <div className="rightDiv ml-64 w-full	h-fit overflow-y-auto">
         <div className="contentDiv box-border w-full h-screen">
-          <h1>content</h1>
+          <Cards category="Popular Shows" />
         </div>
         <div className="footerDiv box-border w-full h-fit">
           <Footer />

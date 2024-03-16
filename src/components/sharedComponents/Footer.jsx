@@ -5,7 +5,7 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <div className="container box-border flex flex-col p-0">
-      <div className="upperDiv box-border flex align-center justify-start gap-52">
+      <div className="upperDiv box-border flex align-center justify-start gap-44">
         <div className="infoDiv box-border flex flex-col p-0">
           <p className="heading p-2 text-slate-100  text-lg font-medium">
             Company
@@ -61,7 +61,7 @@ function Footer() {
         </div>
 
         <div className="infoDiv4">
-          <p className="heading p-2 text-slate-100 text-red-900 text-lg font-medium">
+          <p className="heading p-2 w-max text-slate-100 text-red-900 text-lg font-medium">
             Connect with us
           </p>
           <div className="logos flex justify-evenly align-center">
