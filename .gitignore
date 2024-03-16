@@ -35,3 +35,5 @@ public/logo192.png
 public/favicon.ico
 public/logo512.png
 src/logo.svg
+src/App.js
+.gitignore

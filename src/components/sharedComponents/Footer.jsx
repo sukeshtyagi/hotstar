@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
   return (
     <div className="container box-border flex flex-col p-0">
       <div className="upperDiv box-border flex align-center justify-start gap-56">
@@ -8,7 +10,12 @@ function Footer() {
           <p className="heading p-2 text-slate-100  text-lg font-medium">
             Company
           </p>
-          <p className="link1 px-2 text-slate-500 text-base font-normal ">
+          <p
+            className="link1 px-2 text-slate-500 text-base font-normal cursor-pointer"
+            onClick={() => {
+              navigate("/about-us");
+            }}
+          >
             About us
           </p>
           <p className="link2 px-2 text-slate-500 text-base font-normal cursor-pointer">
@@ -20,14 +27,19 @@ function Footer() {
           <p className="heading p-2 text-slate-100 text-lg font-medium">
             View Website in
           </p>
-          <div className="flex align-center gap-2 pl-3 text-slate-500 font-normal">
-            <input type="checkbox" checked />
+          <div className="flex items-center gap-2 pl-3 text-slate-500 font-normal">
+            <input type="checkbox" checked readOnly />
             <p classname="">English</p>
           </div>
         </div>
 
         <div className="infoDiv">
-          <p className="heading p-2 text-slate-100 text-lg font-medium">
+          <p
+            className="heading p-2 text-slate-100 text-lg font-medium"
+            onClick={() => {
+              navigate("/about-us");
+            }}
+          >
             Need help
           </p>
           <p className="link1 px-2 text-slate-500  text-base font-normal cursor-pointer">
@@ -47,6 +59,7 @@ function Footer() {
               src="/images/fblogo.jpg"
               alt="fb logo"
               className="box-border w-12 h-16"
+              onClick={()=>{console.log('clicked')}}
             />
             <img
               src="/images/xlogo.jpg"
@@ -57,12 +70,12 @@ function Footer() {
         </div>
       </div>
 
-      <div className="lowerDiv box-border flex flex-col bg-yellow-500">
-        <div className="paraDiv">
-          <p className="coypright">@ 2024 STAR.All right reserved</p>
+      <div className="lowerDiv box-border flex justify-between items-center">
+        <div className="paraDiv text-slate-500">
+          <p className="coypright">&copy; 2024 STAR.All right reserved</p>
           <p className="tnc">Terms of Use Privacy Policy FAQ</p>
         </div>
-        <div className="imgDiv flex">
+        <div className="imgDiv flex justify-evenly items-center justify-start gap-4 ">
           <img
             src="/images/googleplaystore.jpg"
             alt="googleplaystore logo"
