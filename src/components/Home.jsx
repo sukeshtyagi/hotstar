@@ -11,8 +11,10 @@ function Home() {
       </div>
 
       <div className="rightDiv ml-64 w-full	h-fit overflow-y-auto">
-        <div className="contentDiv box-border w-full h-screen">
+        <div className="contentDiv box-border w-full h-screen overflow-y-auto flex flex-col gap-2">
           <Cards category="Popular Shows" />
+          <Cards category="New Release" />
+          <Cards category="Highest Rated" />
         </div>
         <div className="footerDiv box-border w-full h-fit">
           <Footer />

@@ -11,7 +11,7 @@ function Cards({ category }) {
   };
 
   return (
-    <div className="outer box-border bg-transparent  w-3/4 flex flex-col gap-2">
+    <div className="outer box-border w-11/12 flex flex-col gap-2">
       <div className="headingDiv flex justify-between item-center">
         <h3 className="heading text-slate-50 text-xl font-bold">{category}</h3>
         <button className="text-slate-400 font-bold bg-transparent">
