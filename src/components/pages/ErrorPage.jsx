@@ -11,7 +11,7 @@ function ErrorPage() {
         width={400}
         className="cursor-pointer"
         onClick={() => {
-          navigate("/");
+          navigate("/home");
         }}
       />
       <p className="text-red-600 font-semibold text-xl italic text-center">

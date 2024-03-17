@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 function Footer() {
   const navigate = useNavigate();
   return (
-    <div className="container box-border flex flex-col p-0">
-      <div className="upperDiv box-border flex align-center justify-start gap-44">
+    <div className="container box-border flex flex-col p-0 h-fit">
+      <div className="upperDiv box-border flex align-center justify-start gap-40">
         <div className="infoDiv box-border flex flex-col p-0">
           <p className="heading p-2 text-slate-100  text-lg font-medium">
             Company
