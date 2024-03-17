@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <div
-      className={`overallContainer box-border w-fit h-screen pt-20 pl-10 transition-all duration-300 text-slate-400 bg-red-300 ${
+      className={`overallContainer box-border w-fit h-screen pt-20 pl-10 transition-all duration-300 text-slate-400 ${
         isHovered ? "w-screen bg-overlay " : "bg-transparent"
       }`}
     >

@@ -64,13 +64,13 @@ function Home() {
   }, []);
 
   return (
-    <div className="homeContainer flex h-screen w-screen justify-start gap-8 bg-red-200">
-      <div className="leftDiv box-border fixed top-0 left-0">
+    <div className="homeContainer flex h-screen w-screen justify-start gap-8 bg-black">
+      <div className="leftDiv box-border fixed top-0 left-0 z-50">
         <Navbar />
       </div>
 
       <div
-        className="rightDiv box-border ml-64 w-3/4 h-fit flex flex-col justify-start gap-28 bg-yellow-200"
+        className="rightDiv box-border ml-80 w-3/4 h-fit flex flex-col justify-start gap-28 z-0"
         ref={contentRef}
       >
         <div className="contentDiv box-border w-full flex flex-col gap-2 mt-4 mb-2">
