@@ -6,15 +6,12 @@ function TopRated() {
     <Cards
       category="Top Rated"
       item1="/images/topRated/tr1.jpeg"
-      item2="/images/topRated/tr2.avif"
-      item3="/images/topRated/tr3.webp"
-      item4="/images/topRated/tr4.jpg"
-      item5="/images/topRated/tr5.webp"
-      item6="/images/topRated/tr6.jpeg"
-      item7="/images/topRated/tr7.jpeg"
-      item8="/images/topRated/tr8.png"
-      item9="/images/topRated/tr9.jpg"
-      item10="/images/topRated/tr10.jpg"
+      item2="/images/topRated/tr2.jpg"
+      item3="/images/topRated/tr3.jpg"
+      item4="/images/topRated/tr4.webp"
+      item5="/images/topRated/tr5.jpg"
+      item6="/images/topRated/tr6.jpg"
+      item7="/images/topRated/tr7.webp"
       link="/new-releases"
     />
   );
