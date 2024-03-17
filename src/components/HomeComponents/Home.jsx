@@ -27,7 +27,7 @@ function Home() {
       <div className="rightDiv box-border ml-80 w-3/4 h-fit flex flex-col justify-start gap-0 z-0">
         <div className="posterDiv p-4 bg-gradient-to-l from-yellow-200 mt-8">
           <img
-            src="/images/common/p4.webp"
+            src="/images/common/p3.jpg"
             alt="poster image"
             className="text-slate-50 mt-0 w-full h-96"
           />
