@@ -5,6 +5,8 @@ import PopularShows from "./PopularShows";
 import NewReleases from "./NewReleases";
 import TopRated from "./TopRated";
 import TVShows from "./TVShows";
+import Movies from "./Movies";
+import WebSeries from "./WebSeries";
 
 function Home() {
   const components = [
@@ -12,6 +14,8 @@ function Home() {
     { component: <NewReleases key="NewReleases" />, name: "NewReleases" },
     { component: <TopRated key="TopRated" />, name: "TopRated" },
     { component: <TVShows key="TV" />, name: "TVShows" },
+    { component: <Movies key="movies" />, name: "movies" },
+    { component: <WebSeries key="WebSeries" />, name: "WebSeries" },
   ];
 
   return (
@@ -21,6 +25,13 @@ function Home() {
       </div>
 
       <div className="rightDiv box-border ml-80 w-3/4 h-fit flex flex-col justify-start gap-0 z-0">
+        <div className="posterDiv p-4 bg-gradient-to-l from-yellow-200 mt-8">
+          <img
+            src="/images/common/p4.webp"
+            alt="poster image"
+            className="text-slate-50 mt-0 w-full h-96"
+          />
+        </div>
         {components.map((componentObj, index) => (
           <div
             key={index}

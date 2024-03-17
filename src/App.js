@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/distinctComponents/Home";
+import Home from "./components/HomeComponents/Home";
 import AboutUs from "./components/pages/AboutUs";
 import ErrorPage from "./components/pages/ErrorPage";
-import PopularShows from "./components/distinctComponents/PopularShows";
+import PopularShows from "./components/HomeComponents/PopularShows";
 
 function App() {
   return (
