@@ -1,25 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Slider from "react-slick";
 
-function Cards({ category, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, link }) {
+function Cards({
+  category,
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  item6,
+  item7,
+  item8,
+  item9,
+  item10,
+  link,
+}) {
   const navigate = useNavigate();
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+  const [isHovered4, setIsHovered4] = useState(false);
+  const [isHovered5, setIsHovered5] = useState(false);
+  const [isHovered6, setIsHovered6] = useState(false);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-  };
   return (
-    <div className="outer box-border flex flex-col gap-2">
-      <div className="headingDiv box-border flex justify-between item-center mb-2">
-        <h3 className="heading text-slate-50 text-3xl font-extrabold">
+    <div
+      className={`outer  box-border flex flex-col gap-0 mb-6 ${
+        isHovered1 || isHovered2 || isHovered3 || isHovered4 || isHovered5
+          ? "mb-32"
+          : ""
+      } z-0`}
+    >
+      <div className="headingDiv box-border flex justify-between item-center ml-16 z-0 ">
+        <h3 className="heading text-slate-50 text-3xl font-extrabold z-0 ">
           {category}
         </h3>
         <button
-          className="text-slate-400 font-bold bg-transparent"
+          className="text-slate-400 mr-16 font-bold bg-transparent "
           onClick={() => {
             navigate(`${link}`);
           }}
@@ -27,58 +44,98 @@ function Cards({ category, item1, item2, item3, item4, item5, item6, item7, item
           View More
         </button>
       </div>
-      <Slider {...settings} className="w-full">
-        {item1 && (
-          <div className="box-border p-0 bg-cover bg-center">
-            <img src={item1} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item2 && (
-          <div className="box-border p-0">
-            <img src={item2} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item3 && (
-          <div className="box-border p-0">
-            <img src={item3} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item4 && (
-          <div className="box-border p-0">
-            <img src={item4} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item5 && (
-          <div className="box-border p-0">
-            <img src={item5} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item6 && (
-          <div className="box-border p-0">
-            <img src={item6} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item7 && (
-          <div className="box-border p-0">
-            <img src={item7} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item8 && (
-          <div className="box-border p-0">
-            <img src={item8} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item9 && (
-          <div className="box-border p-0">
-            <img src={item9} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-        {item10 && (
-          <div className="box-border p-0">
-            <img src={item10} alt="" className="box-border w-32 h-44" />
-          </div>
-        )}
-      </Slider>
+
+      <div className="itemContainer box-border flex justify-evenly z-0 ">
+        <div
+          className="itemDiv w-44 h-64 p-2 mt-4 hover:scale-150 hover:z-50"
+          onMouseEnter={() => setIsHovered1(true)}
+          onMouseLeave={() => setIsHovered1(false)}
+        >
+          <img src={item1} alt="" className="box-border w-44 h-64" />
+
+          {isHovered1 && (
+            <div className="flex flex-col bg-black z-50">
+              <p className="text-white">Additional Content</p>
+              <button className="text-white">Watch</button>
+            </div>
+          )}
+        </div>
+
+        <div
+          className="itemDiv w-44 h-64 p-2 mt-4 hover:scale-150 hover:z-50"
+          onMouseEnter={() => setIsHovered2(true)}
+          onMouseLeave={() => setIsHovered2(false)}
+        >
+          <img src={item2} alt="" className="box-border w-44 h-64" />
+
+          {isHovered2 && (
+            <div className="flex flex-col bg-black z-50">
+              <p className="text-white">Additional Content</p>
+              <button className="text-white">Watch</button>
+            </div>
+          )}
+        </div>
+
+        <div
+          className="itemDiv w-44 h-64 p-2 mt-4 hover:scale-150 hover:z-50"
+          onMouseEnter={() => setIsHovered3(true)}
+          onMouseLeave={() => setIsHovered3(false)}
+        >
+          <img src={item3} alt="" className="box-border w-44 h-64" />
+
+          {isHovered3 && (
+            <div className="flex flex-col bg-black z-50">
+              <p className="text-white">Additional Content</p>
+              <button className="text-white">Watch</button>
+            </div>
+          )}
+        </div>
+
+        <div
+          className="itemDiv w-44 h-64 p-2 mt-4 hover:scale-150 hover:z-50"
+          onMouseEnter={() => setIsHovered4(true)}
+          onMouseLeave={() => setIsHovered4(false)}
+        >
+          <img src={item4} alt="" className="box-border w-44 h-64" />
+
+          {isHovered4 && (
+            <div className="flex flex-col bg-black z-50">
+              <p className="text-white">Additional Content</p>
+              <button className="text-white">Watch</button>
+            </div>
+          )}
+        </div>
+
+        <div
+          className="itemDiv w-44 h-64 p-2 mt-4 hover:scale-150 hover:z-50"
+          onMouseEnter={() => setIsHovered5(true)}
+          onMouseLeave={() => setIsHovered5(false)}
+        >
+          <img src={item5} alt="" className="box-border w-44 h-64" />
+
+          {isHovered5 && (
+            <div className="flex flex-col bg-black z-50">
+              <p className="text-white">Additional Content</p>
+              <button className="text-white">Watch</button>
+            </div>
+          )}
+        </div>
+
+        <div
+          className="itemDiv w-44 h-64 p-2 mt-4 hover:scale-150 hover:z-50"
+          onMouseEnter={() => setIsHovered5(true)}
+          onMouseLeave={() => setIsHovered5(false)}
+        >
+          <img src={item6} alt="" className="box-border w-44 h-64" />
+
+          {isHovered6 && (
+            <div className="flex flex-col bg-black z-50">
+              <p className="text-white">Additional Content</p>
+              <button className="text-white">Watch</button>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
