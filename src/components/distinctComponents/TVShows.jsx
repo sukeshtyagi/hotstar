@@ -4,7 +4,7 @@ import Cards from "../sharedComponents/Cards";
 function TVShows() {
   return (
     <Cards
-    category="Popular Shows"
+    category="TV Shows"
     item1="/images/popularShows/dkdm.jpg"
     item2="/images/popularShows/ps2.jpg"
     item3="/images/popularShows/ps3.jpeg"
@@ -15,7 +15,7 @@ function TVShows() {
     item8="/images/popularShows/ps8.webp"
     item9="/images/popularShows/ps9.webp"
     item10="/images/popularShows/ps10.webp"
-    link='/popular-shows'
+    link='/tv-shows'
     />
   )
 }

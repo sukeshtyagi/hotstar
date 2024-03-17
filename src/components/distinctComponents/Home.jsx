@@ -4,12 +4,14 @@ import Footer from "../sharedComponents/Footer";
 import PopularShows from "./PopularShows";
 import NewReleases from "./NewReleases";
 import TopRated from "./TopRated";
+import TVShows from "./TVShows";
 
 function Home() {
   const components = [
     { component: <PopularShows key="PopularShows" />, name: "PopularShows" },
     { component: <NewReleases key="NewReleases" />, name: "NewReleases" },
     { component: <TopRated key="TopRated" />, name: "TopRated" },
+    { component: <TVShows key="TV" />, name: "TVShows" },
   ];
 
   return (
@@ -20,7 +22,10 @@ function Home() {
 
       <div className="rightDiv box-border ml-80 w-3/4 h-fit flex flex-col justify-start gap-0 z-0">
         {components.map((componentObj, index) => (
-          <div key={index} className="contentDiv box-border w-full flex flex-col gap-2 mt-8">
+          <div
+            key={index}
+            className="contentDiv box-border w-full flex flex-col gap-2 mt-8"
+          >
             {componentObj.component}
           </div>
         ))}
