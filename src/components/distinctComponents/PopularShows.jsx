@@ -5,16 +5,16 @@ function PopularShows() {
   return (
     <Cards
       category="Popular Shows"
-      s1="/images/ps/dkdm.jpg"
-      s2="/images/ps/ps2.jpg"
-      s3="/images/ps/ps3.jpeg"
-      s4="/images/ps/ps4.jpeg"
-      s5="/images/ps/ps5.jpeg"
-      s6="/images/ps/ps6.webp"
-      s7="/images/ps/ps7.webp"
-      s8="/images/ps/ps8.webp"
-      s9="/images/ps/ps9.webp"
-      s10="/images/ps/ps10.webp"
+      item1="/images/popularShows/dkdm.jpg"
+      item2="/images/popularShows/ps2.jpg"
+      item3="/images/popularShows/ps3.jpeg"
+      item4="/images/popularShows/ps4.jpeg"
+      item5="/images/popularShows/ps5.jpeg"
+      item6="/images/popularShows/ps6.webp"
+      item7="/images/popularShows/ps7.webp"
+      item8="/images/popularShows/ps8.webp"
+      item9="/images/popularShows/ps9.webp"
+      item10="/images/popularShows/ps10.webp"
       link='/popular-shows'
     />
   );
