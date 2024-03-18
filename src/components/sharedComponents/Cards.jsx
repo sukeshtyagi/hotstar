@@ -50,9 +50,11 @@ function Cards({
 
           {isHovered1 && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2">
-                <p className="text-white">Additional Content</p>
-                <button className="text-white">Watch</button>
+              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+                <p className="text-white text-xs">Hindi</p>
+                <button className="text-green-500	 text-xs font-bold">
+                  Hotstar Special
+                </button>
               </div>
 
               <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
@@ -85,7 +87,7 @@ function Cards({
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-light text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -104,9 +106,11 @@ function Cards({
 
           {isHovered2 && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2">
-                <p className="text-white">Additional Content</p>
-                <button className="text-white">Watch</button>
+              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+                <p className="text-white text-xs">Hindi</p>
+                <button className="text-green-500	 text-xs font-bold">
+                  Hotstar Special
+                </button>
               </div>
 
               <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
@@ -139,7 +143,7 @@ function Cards({
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-light text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -158,9 +162,11 @@ function Cards({
 
           {isHovered3 && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2">
-                <p className="text-white">Additional Content</p>
-                <button className="text-white">Watch</button>
+              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+                <p className="text-white text-xs">Hindi</p>
+                <button className="text-green-500	 text-xs font-bold">
+                  Hotstar Special
+                </button>
               </div>
 
               <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
@@ -193,7 +199,7 @@ function Cards({
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-light text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -212,9 +218,11 @@ function Cards({
 
           {isHovered4 && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2">
-                <p className="text-white">Additional Content</p>
-                <button className="text-white">Watch</button>
+              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+                <p className="text-white text-xs">Hindi</p>
+                <button className="text-green-500	 text-xs font-bold">
+                  Hotstar Special
+                </button>
               </div>
 
               <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
@@ -247,7 +255,7 @@ function Cards({
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-light text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -266,9 +274,11 @@ function Cards({
 
           {isHovered5 && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2">
-                <p className="text-white">Additional Content</p>
-                <button className="text-white">Watch</button>
+              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+                <p className="text-white text-xs">Hindi</p>
+                <button className="text-green-500	 text-xs font-bold">
+                  Hotstar Special
+                </button>
               </div>
 
               <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
@@ -301,7 +311,7 @@ function Cards({
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-light text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -320,9 +330,11 @@ function Cards({
 
           {isHovered6 && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2">
-                <p className="text-white">Additional Content</p>
-                <button className="text-white">Watch</button>
+              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+                <p className="text-white text-xs">Hindi</p>
+                <button className="text-green-500	 text-xs font-bold">
+                  Hotstar Special
+                </button>
               </div>
 
               <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
@@ -355,9 +367,9 @@ function Cards({
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-light text-ellipsis leading-3	">
-                    "Experience the magic of captivating stories, with tales
-                    that leave you craving for more."
+                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                    "Experience the magic of captivating stories, with talesthat
+                    leave you craving for more."
                   </p>
                 </div>
               </div>
