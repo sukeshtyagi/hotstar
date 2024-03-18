@@ -32,7 +32,7 @@ function Header() {
         </div>
 
         {isDropdownOpen && (
-          <div className="absolute top-20 right-68 w-48 bg-black border border-4 border-zinc-500 rounded-md p-2 text-center flex flex-col gap-1 cursor-pointer">
+          <div className="absolute top-20 right-68 w-48 bg-black border border-4 border-zinc-500 rounded-md p-2 text-center flex flex-col gap-1 cursor-pointer z-100">
             <div
               className="bg-gradient-to-r from-blue-500 via-purple-900 to-red-500 text-white text-xl font-bold border border-green-500 border-2 rounded-2xl"
               onClick={() => {
