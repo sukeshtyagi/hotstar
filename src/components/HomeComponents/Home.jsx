@@ -19,13 +19,13 @@ function Home() {
   ];
 
   return (
-    <div className="homeContainer flex h-fit w-screen justify-start bg-black z-0 overflow-x-hidden">
-      <div className="leftDiv box-border fixed top-0 left-0 z-20 overflow-x-hidden">
+    <div className="homeContainer flex h-fit w-screen justify-start bg-black z-0">
+      <div className="leftDiv box-border fixed top-0 left-0 z-20">
         <Navbar />
       </div>
 
-      <div className="rightDiv box-border ml-44 w-10/12 h-full flex flex-col justify-start gap-0 z-0 overflow-x-hidden	">
-        <div className="posterDiv p-4 bg-gradient-to-l from-yellow-200 mt-8 z-0 overflow-x-hidden">
+      <div className="rightDiv box-border ml-44 w-10/12 h-full flex flex-col justify-start gap-0 z-0">
+        <div className="posterDiv p-4 bg-gradient-to-l from-yellow-200 mt-8 z-0">
           <img
             src="/images/common/p3.jpg"
             alt="poster "
@@ -35,13 +35,13 @@ function Home() {
         {components.map((componentObj, index) => (
           <div
             key={index}
-            className="contentDiv box-border w-full h-full flex flex-col gap-2 mt-8 z-0 overflow-x-hidden	"
+            className="contentDiv box-border w-full h-full flex flex-col gap-2 mt-8 z-0"
           >
             {componentObj.component}
           </div>
         ))}
 
-        <div className="footerDiv box-border w-full h-fit mt-12 z-0 overflow-x-hidden">
+        <div className="footerDiv box-border w-full h-fit mt-8 z-0">
           <Footer />
         </div>
       </div>
