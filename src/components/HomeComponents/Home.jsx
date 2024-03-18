@@ -41,7 +41,7 @@ function Home() {
           </div>
         ))}
 
-        <div className="footerDiv box-border w-full h-fit mt-8 z-0">
+        <div className="footerDiv box-border w-full h-fit mt-8 z-0 border-t-4">
           <Footer />
         </div>
       </div>
