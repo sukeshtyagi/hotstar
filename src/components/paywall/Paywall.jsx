@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "../sharedComponents/Footer";
-import { CheckIcon, XIcon } from "@heroicons/react/outline";
+import { CheckIcon, XIcon, CheckCircleIcon } from "@heroicons/react/outline";
 
 function Paywall() {
   const [mobilePlanSelected, setMobilePlanSelected] = useState(false);
+  const [superPlanSelected, setSuperPlanSelected] = useState(false);
+  const [premiumPlanSelected, setPremiumPlanSelected] = useState(false);
+  const [quaterlyPlanSelected, setQuaterlyPlanSelected] = useState(false);
+  const [yearlyPlanSelected, setYearlyPlanSelected] = useState(false);
+  const [monthlyPlanSelected, setMonthlyPlanSelected] = useState(false);
 
   return (
     <div className="paywall box-border bg-black w-screen h-fit overflow-x-hidden ">
@@ -20,7 +25,7 @@ function Paywall() {
             <p>You will be able to watch only on mobile app</p>
           )}
         </div>
-        <div className="rightDiv  box-border h-fit w-8/12 pr-12 font-white">
+        <div className="rightDiv  box-border h-fit w-8/12 flex flex-col gap-12 pr-12 font-white">
           <div className="planContainer box-border h-full grid grid-cols-[3.5fr,1fr,1fr,1fr] gap-10 bg-black text-white text-2xl font-serif items-center justify-items-center	">
             <div class="item"></div>
             <div class="item font-bold text-3xl">Mobile</div>
@@ -100,18 +105,56 @@ function Paywall() {
             <div class="item">Dobly Atmos</div>
           </div>
 
-          <div className="planPeriodDiv flex h-fit text-white">
-            <div className="quaterly">
-              <p>Quaterly</p>
-              <input type="checkbox" className="bg-blue-500 text-white" />
+          <div className="planPeriodDiv flex w-6/12 h-16   justify-center gap-8 text-white bg-zinc-500 m-auto py-2 rounded-3xl">
+            <div className="quaterly flex items-center justify-start gap-0 ">
+              <div
+                className="box-border text-3xl cursor-pointer"
+                style={{ userSelect: "none", userDrag: "none" }}
+                onClick={() => {
+                  setQuaterlyPlanSelected(true);
+                  setYearlyPlanSelected(false);
+                  setMonthlyPlanSelected(false);
+                }}
+              >
+                Quaterly
+              </div>
+              {quaterlyPlanSelected && (
+                <CheckIcon className="w-8 text-white-900 text-2xl bg-purple-500 rounded-full" />
+              )}
             </div>
-            <div className="yearly">
-              <p>Yearly</p>
-              <input type="checkbox" className="bg-blue-500 text-white" />
-            </div>{" "}
-            <div className="monthly">
-              <p>Monthly</p>
-              <input type="checkbox" className="bg-blue-500 text-white" />
+
+            <div className="yearly flex items-center justify-start gap-0 cursor-pointer">
+              <p
+                className="box-border text-3xl"
+                style={{ userSelect: "none", userDrag: "none" }}
+                onClick={() => {
+                  setQuaterlyPlanSelected(false);
+                  setYearlyPlanSelected(true);
+                  setMonthlyPlanSelected(false);
+                }}
+              >
+                Yearly
+              </p>
+              {yearlyPlanSelected && (
+                <CheckIcon className="w-8 text-white-900 text-2xl bg-purple-500 rounded-full" />
+              )}
+            </div>
+
+            <div className="monthly flex items-center justify-start gap-0 cursor-pointer">
+              <p
+                className="box-border text-3xl"
+                style={{ userSelect: "none", userDrag: "none" }}
+                onClick={() => {
+                  setQuaterlyPlanSelected(false);
+                  setYearlyPlanSelected(false);
+                  setMonthlyPlanSelected(true);
+                }}
+              >
+                Monthly
+              </p>
+              {monthlyPlanSelected && (
+                <CheckIcon className="w-8 text-white-900 text-2xl bg-purple-500 rounded-full" />
+              )}
             </div>
           </div>
 
