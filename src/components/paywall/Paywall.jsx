@@ -103,8 +103,12 @@ function Paywall() {
             <div class="item text-center">Dobly Atmos</div>
           </div>
           `
-          <div className="planPeriodDiv flex w-6/12 h-16   justify-center gap-8 text-white bg-zinc-500 m-auto py-2 rounded-3xl">
-            <div className="quaterly flex items-center justify-start gap-0 ">
+          <div className="planPeriodDiv flex w-6/12 h-16   justify-center gap-8 text-slate-900 bg-zinc-500 m-auto py-2 rounded-3xl">
+            <div
+              className={`quaterly flex items-center justify-start gap-0 cursor-pointer ${
+                quaterlyPlanSelected ? "text-white" : ""
+              }`}
+            >
               <div
                 className="box-border text-3xl cursor-pointer"
                 style={{ userSelect: "none", userDrag: "none" }}
@@ -121,7 +125,11 @@ function Paywall() {
               )}
             </div>
 
-            <div className="yearly flex items-center justify-start gap-0 cursor-pointer">
+            <div
+              className={`yearly flex items-center justify-start gap-0 cursor-pointer ${
+                yearlyPlanSelected ? "text-white" : ""
+              }`}
+            >
               <p
                 className="box-border text-3xl"
                 style={{ userSelect: "none", userDrag: "none" }}
@@ -138,7 +146,11 @@ function Paywall() {
               )}
             </div>
 
-            <div className="monthly flex items-center justify-start gap-0 cursor-pointer">
+            <div
+              className={`monthly flex items-center justify-start gap-0 cursor-pointer ${
+                monthlyPlanSelected ? "text-white" : ""
+              }`}
+            >
               <p
                 className="box-border text-3xl"
                 style={{ userSelect: "none", userDrag: "none" }}
