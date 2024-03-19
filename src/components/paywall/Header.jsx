@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <div className="headerContainer w-11/12 m-auto box-border flex justify-between items-center">
+    <div className="headerContainer w-10/12 m-auto box-border flex justify-between items-center sticky top-0 left-0">
       <div className="leftDiv box-border flex justify-start gap-4 items-center">
         <XIcon
           className="box-border w-12 text-white relative top-1"
@@ -24,15 +24,15 @@ function Header() {
       </div>
       <div className="rightDiv box-border flex justify-start items-center gap-4">
         <div
-          className="languageDiv w-48 h-12 box-border flex justify-center gap-2 items-center border rounded-xl cursor-pointer bg-gradient-to-r from-blue-500 via-yellow-500 to-red-200"
+          className="languageDiv w-48 h-16 box-border flex justify-center gap-2 items-center border border-green-500 border-2 rounded-xl cursor-pointer bg-gradient-to-r from-blue-500 via-yellow-500 to-red-200"
           onClick={toggleDropdown}
         >
-          <p className="text-white text-xl font-bold">{languageSelected}</p>
+          <p className="text-white text-2xl font-bold">{languageSelected}</p>
           <ChevronDownIcon className="box-border w-6 text-white" />
         </div>
 
         {isDropdownOpen && (
-          <div className="absolute top-20 right-68 w-48 bg-black border border-4 border-zinc-500 rounded-md p-2 text-center flex flex-col gap-1 cursor-pointer z-100">
+          <div className="absolute top-20 right-68 w-48 bg-black border border-4 border-zinc-500 rounded-md p-2 text-center flex flex-col gap-1 cursor-pointer">
             <div
               className="bg-gradient-to-r from-blue-500 via-purple-900 to-red-500 text-white text-xl font-bold border border-green-500 border-2 rounded-2xl"
               onClick={() => {
@@ -117,9 +117,9 @@ function Header() {
           </div>
         )}
 
-        <div className="loginDiv w-48 h-12 box-border flex justify-center items-center rounded-xl px-8 bg-gradient-to-r from-blue-500 via-purple-900 to-red-500">
+        <div className="loginDiv w-48 h-16 box-border flex justify-center items-center border border-green-500 border-2 rounded-xl px-8 bg-gradient-to-r from-blue-500 via-purple-900 to-red-500 font-serif cursor-pointer  ">
           <button
-            className="login text-white text-xl font-bold"
+            className="login text-white text-2xl font-bold"
             onClick={() => {
               navigate("/login");
             }}
