@@ -100,7 +100,7 @@ function Paywall() {
             <div class="item">Dobly Atmos</div>
           </div>
 
-          <div className="planPeriodDiv flex h-fit">
+          <div className="planPeriodDiv flex h-fit text-white">
             <div className="quaterly">
               <p>Quaterly</p>
               <input type="checkbox" className="bg-blue-500 text-white" />
@@ -115,7 +115,7 @@ function Paywall() {
             </div>
           </div>
 
-          <div className="costDiv flex h-fit">
+          <div className="costDiv flex h-fit text-white">
             <div className="mobileCost">
               <h3 className="heading">Mobile</h3>
               <p className="cost">cost</p>
@@ -130,7 +130,7 @@ function Paywall() {
             </div>
           </div>
 
-          <button>continue</button>
+          <button className="text-white">continue</button>
         </div>
       </div>
       <Footer />
