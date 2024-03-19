@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <div className="headerContainer w-10/12 m-auto box-border flex justify-between items-center sticky top-0 left-0">
+    <div className="headerContainer w-10/12 m-auto box-border flex justify-between items-center sticky top-0 left-0 py-12">
       <div className="leftDiv box-border flex justify-start gap-4 items-center">
         <XIcon
           className="box-border w-12 text-white relative top-1"

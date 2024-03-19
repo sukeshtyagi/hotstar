@@ -12,20 +12,22 @@ function Paywall() {
   const [monthlyPlanSelected, setMonthlyPlanSelected] = useState(false);
 
   return (
-    <div className="paywall box-border bg-black w-screen h-fit overflow-x-hidden ">
+    <div className="paywall box-border bg-black w-screen h-fit overflow-x-hidden">
       <div className="headerDiv ">
         <Header />
       </div>
-      <div className="mainBody box-border h-fit flex font-serif">
+      <div className="mainBody box-border w-screen h-fit flex font-serif mb-20 pt-20 pb-20 border-y-2 border-blue-500">
         <div className="leftDiv box-border h-full w-2/5">
-          <h1 className="text-white text-6xl leading-normal p-4 py-24">
+          <h1 className="text-white text-6xl leading-normal p-4 py-24 ">
             Subscribe now and start streaming
           </h1>
           {mobilePlanSelected && (
-            <p>You will be able to watch only on mobile app</p>
+            <p className="box-border h-fit w-3/4 text-yellow-200 text-2xl text-left p-4 m-auto">
+              You will be able to watch only on mobile app
+            </p>
           )}
         </div>
-        <div className="rightDiv  box-border h-fit w-8/12 flex flex-col gap-12 pr-12 font-white">
+        <div className="rightDiv  box-border h-fit w-8/12 flex flex-col gap-12 pr-12 font-white overflow-x-hidden">
           <div className="planContainer box-border h-full grid grid-cols-[3.5fr,1fr,1fr,1fr] gap-10 bg-black text-white text-2xl font-serif items-center justify-items-center">
             <div class="item"></div>
             <div class="item font-bold text-3xl">Mobile</div>
@@ -168,17 +170,152 @@ function Paywall() {
             </div>
           </div>
           <div className="costDiv flex h-fit text-white">
-            <div className="mobileCost">
-              <h3 className="heading">Mobile</h3>
-              <p className="cost">cost</p>
+            <div
+              className={`mobilePlanCost w-48 h-36 box-border flex flex-col justify-evenly gap-4 items-start border rounded-xl border-zinc-500 border-4 p-2 px-4 cursor-pointer ${
+                mobilePlanSelected ? "text-yellow-200" : ""
+              }`}
+              style={{ userSelect: "none", userDrag: "none" }}
+              onClick={() => {
+                setMobilePlanSelected(true);
+                setSuperPlanSelected(false);
+                setPremiumPlanSelected(false);
+              }}
+            >
+              <h3
+                className="heading box-border text-4xl font-normal"
+                style={{ userSelect: "none", userDrag: "none" }}
+              >
+                Mobile
+              </h3>
+              {quaterlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  149
+                  <span className="cost box-border text-xl  font-thin">
+                    /3 months
+                  </span>
+                </p>
+              )}
+              {yearlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  499
+                  <span className="cost box-border text-xl  font-thin">
+                    /year
+                  </span>
+                </p>
+              )}
+              {monthlyPlanSelected && (
+                <p className="cost">
+                  <span> </span>
+                  <span></span>
+                </p>
+              )}
             </div>
-            <div className="superCost">
-              <h3 className="heading">Super</h3>
-              <p className="cost">cost</p>
+
+            <div
+              className={`superPlanCost w-48 h-36 box-border flex flex-col justify-evenly gap-4 items-start border rounded-xl border-zinc-500 border-4 p-2 px-4 cursor-pointer ${
+                monthlyPlanSelected ? "cursor-not-allowed text-zinc-500" : ""
+              }`}
+              style={{ userSelect: "none", userDrag: "none" }}
+              onClick={() => {
+                if (!monthlyPlanSelected) {
+                  setMobilePlanSelected(false);
+                  setSuperPlanSelected(true);
+                  setPremiumPlanSelected(false);
+                }
+              }}
+            >
+              <h3
+                className={`heading box-border text-4xl font-normal ${
+                  superPlanSelected ? "cursor-not-allowed text-zinc-500" : ""
+                }`}
+              >
+                Super
+              </h3>
+              {quaterlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  299
+                  <span className="cost box-border text-xl  font-thin">
+                    /3 months
+                  </span>
+                </p>
+              )}
+              {yearlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  899
+                  <span className="cost box-border text-xl  font-thin">
+                    /year
+                  </span>
+                </p>
+              )}
+              {monthlyPlanSelected && (
+                <p className="cost">
+                  <span> </span>
+                  <span></span>
+                </p>
+              )}
             </div>
-            <div className="premiumCost">
-              <h3 className="heading">Premium</h3>
-              <p className="cost">cost</p>
+
+            <div
+              className={`premiumPlanCost w-48 h-36 box-border flex flex-col justify-evenly gap-4 items-start border rounded-xl border-zinc-500 border-4 p-2 px-4 cursor-pointer ${
+                premiumPlanSelected ? "text-yellow-200" : ""
+              }`}
+              style={{ userSelect: "none", userDrag: "none" }}
+              onClick={() => {
+                setMobilePlanSelected(false);
+                setSuperPlanSelected(false);
+                setPremiumPlanSelected(true);
+              }}
+            >
+              <h3 className="heading box-border text-4xl font-normal">
+                Premium
+              </h3>
+
+              {quaterlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  499
+                  <span className="cost box-border text-xl  font-thin">
+                    /3 months
+                  </span>
+                </p>
+              )}
+              {yearlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  1499
+                  <span className="cost box-border text-xl  font-thin">
+                    /year
+                  </span>
+                </p>
+              )}
+
+              {monthlyPlanSelected && (
+                <p className="cost box-border text-4xl font-bold">
+                  <span className="cost box-border text-xl font-thin relative -top-2">
+                    &#x20B9;{" "}
+                  </span>
+                  299
+                  <span className="cost box-border text-xl  font-thin">
+                    /month
+                  </span>
+                </p>
+              )}
             </div>
           </div>
           <button className="text-white">continue</button>
