@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         overlay: "rgba(0,0,0,0.5)",
+        overlayDense: "rgba(0,0,0,0.8)",
       },
       scale: {
         175: "1.75",
