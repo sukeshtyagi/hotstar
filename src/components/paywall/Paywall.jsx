@@ -3,18 +3,20 @@ import Header from "./Header";
 import Footer from "../sharedComponents/Footer";
 import { CheckIcon, XIcon } from "@heroicons/react/outline";
 import PlanDurationCost from "./PlanDurationCost";
+import { useNavigate } from "react-router-dom";
 
 function Paywall() {
+  const navigate = useNavigate();
   const [mobilePlanSelected, setMobilePlanSelected] = useState(false);
-   
+
   return (
     <div className="paywall box-border bg-black w-screen h-fit overflow-x-hidden">
       <div className="headerDiv ">
         <Header />
       </div>
       <div className="mainBody box-border w-screen h-fit flex font-serif mb-20 pt-20 pb-20 border-y-2 border-blue-500">
-        <div className="leftDiv box-border h-full w-2/5">
-          <h1 className="text-white text-6xl leading-normal p-4 py-24 ">
+        <div className="leftDiv box-border h-full w-2/5 pl-6 pt-12">
+          <h1 className="text-emerald-500 text-6xl leading-normal p-4 py-24 ">
             Subscribe now and start streaming
           </h1>
           {mobilePlanSelected && (
@@ -100,9 +102,15 @@ function Paywall() {
             <div class="item text-center">Dobly Atmos</div>
             <div class="item text-center">Dobly Atmos</div>
           </div>
-          <PlanDurationCost />
-          
-          <button className="text-white">continue</button>
+          <PlanDurationCost mobilePlanSelected2={mobilePlanSelected} />
+          <button
+            className="box-border p-2 text-3xl text-white w-full h-16 rounded-2xl bg-gradient-to-r from-violet-500 via-purple-900 to-red-700 cursor-pointer border border-transparent hover:border-4 hover:border-slate-50"
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            Continue
+          </button>
         </div>
       </div>
       <Footer />
