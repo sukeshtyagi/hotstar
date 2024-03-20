@@ -1,8 +1,35 @@
-import React, { useRef, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Paywall from "../paywall/Paywall";
 import LoginHeader from "./LoginHeader";
+import { ChevronRightIcon } from "@heroicons/react/outline";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+  const [mobNumber, setMobNumber] = useState("");
+  const [getOpt, setGetOpt] = useState(false);
+
+  const handleMobNumber = (e) => {
+    setMobNumber(e.target.value);
+  };
+
+  const validateMobNumber = (mobNumber) => {
+    const pattern = /^[1-9][0-9]*$/;
+    if (pattern.test(mobNumber) && mobNumber.length === 10) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  useEffect(() => {
+    if (validateMobNumber(mobNumber)) {
+      setGetOpt(true);
+    } else {
+      setGetOpt(false);
+    }
+  }, [mobNumber]);
+
   return (
     <div className="box-border w-screen h-screen overflow-x-hidden">
       <Paywall />
@@ -45,7 +72,10 @@ function Login() {
                 <input
                   type="text"
                   name=""
-                  placeholder="0015081947"
+                  value={mobNumber}
+                  onChange={handleMobNumber}
+                  placeholder="0123456789"
+                  maxlength="10" 
                   className="box-border w-5/6 h-18 border outline-none rounded-xl text-left text-3xl text-white p-4 pl-8 cursor-text bg-transparent "
                 />
                 <p className="mobNumber text-lg text-gray-500 absolute bottom-3/4 right-1/3  px-2 bg-gray-900">
@@ -64,8 +94,21 @@ function Login() {
                   Terms of Use.
                 </span>
               </p>
-
-              <p className="trouble box-border text-zinc-500 text-lg mx-2 tracking-tight mt-40">
+              {getOpt && (
+                <button
+                  className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-12 rounded-2xl cursor-pointer mt-28 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500  hover:border-slate-50"
+                  onClick={() => {
+                    navigate("/login/enter-otp");
+                  }}
+                >
+                  Get OTP
+                  <ChevronRightIcon
+                    className="h-6 w-6 text-slate-100"
+                    aria-hidden="true"
+                  />
+                </button>
+              )}
+              <p className="trouble box-border text-zinc-500 text-lg mx-2 tracking-tight mt-">
                 Having trouble logging in?
                 <span className="trouble box-border text-blue-500 text-lg font-semibold mx-2 tracking-tight">
                   Get Help

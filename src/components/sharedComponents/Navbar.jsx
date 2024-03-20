@@ -29,6 +29,7 @@ function Navbar() {
           onClick={() => {
             navigate("/paywall");
           }}
+          style={{ caretColor: "transparent" }}
         />
         <div
           className="subscribeDiv flex items-center text-yellow-300 cursor-pointer"

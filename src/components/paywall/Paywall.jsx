@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "../sharedComponents/Footer";
-import { CheckIcon, XIcon } from "@heroicons/react/outline";
+import { CheckIcon, XIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import PlanDurationCost from "./PlanDurationCost";
 import { useNavigate } from "react-router-dom";
 
@@ -104,12 +104,16 @@ function Paywall() {
           </div>
           <PlanDurationCost mobilePlanSelected2={mobilePlanSelected} />
           <button
-            className="box-border p-2 text-3xl text-white w-full h-16 rounded-2xl bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500 cursor-pointer border border-transparent hover:border-4 hover:border-slate-50"
+            className="box-border flex items-center justify-center gap-4 p-2 text-3xl text-white w-full h-16 rounded-2xl bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500 cursor-pointer border border-transparent hover:border-4 hover:border-slate-50"
             onClick={() => {
               navigate("/login");
             }}
           >
             Continue
+            <ChevronRightIcon
+              className="h-8 w-8 text-slate-100"
+              aria-hidden="true"
+            />
           </button>
         </div>
       </div>
