@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronRightIcon, ArrowLongLeftIcon } from "@heroicons/react/outline";
+import { ChevronRightIcon } from "@heroicons/react/outline";
 import { useNavigate } from "react-router-dom";
 
 function EnterOtpComp() {
@@ -21,18 +21,30 @@ function EnterOtpComp() {
       ...prevState,
       [name]: value,
     }));
+
+    const { digit1, digit2, digit3, digit4 } = {
+      ...otpDigits,
+      [name]: value,
+    };
+
+    if (digit1 && digit2 && digit3 && digit4) {
+      setEnterOpt(true);
+      console.log("if executed");
+    } else {
+      setEnterOpt(false);
+    }
   };
 
   return (
-    <div className="rightDiv flex flex-col box-border w-1/2 h-full text-zinc-500 p-2 px-12 mt-16 relative">
-      <button className="box-border flex items-center justify-start gap-0 text-2xl text-zinc-300">
+    <div className="rightDiv box-border w-1/2 h-full flex flex-col gap-0  text-zinc-500 p-2 px-12 mt-10">
+      <button className="box-border flex items-center justify-start gap-0 text-xl text-zinc-500 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8 text-zinc-300"
+          className="w-6 h-6"
         >
           <path
             strokeLinecap="round"
@@ -43,56 +55,66 @@ function EnterOtpComp() {
         Back
       </button>
 
-      <p className="enterOtpPara box-border w-full text-2xl text-slate-50 tracking-wide">
-        Enter OTP sent to <span className="text-emerald-500">{mobNumber}</span>
+      <p className="enterOtpPara box-border w-full text-2xl text-slate-50 tracking-wide mt-4">
+        Enter OTP sent to <span className="text-blue-500">{mobNumber}</span>
       </p>
 
-      <div className="inputOtpDiv box-border w-full flex justify-start gap-2 p-2">
+      <div className="inputOtpDiv box-border w-full flex justify-start bg-transparent gap-2 p-2">
         <input
-          type="number"
+          type="text"
+          maxLength={1}
           name="digit1"
           value={otpDigits.digit1}
           onChange={handleInputChange}
-          className="box-border w-1/6 bg-red-500 text-slate-50 p-2"
+          className={`box-border w-1/5 h-14 bg-transparent  border rounded-xl cursor-pointer text-slate-50 text-3xl font-bold text-center p-2 outline-none ${
+            otpDigits.digit1 ? "border-4 border-green-600 " : ""
+          }`}
         />
 
         <input
-          type="number"
-          step="1"
+          type="text"
           name="digit2"
           value={otpDigits.digit2}
           onChange={handleInputChange}
-          className="box-border w-1/6 bg-red-500 text-slate-50"
+          className={`box-border w-1/5 h-14 bg-transparent  border rounded-xl  cursor-pointer text-slate-50 text-3xl font-bold text-center p-2 outline-none ${
+            otpDigits.digit2 ? "border-4 border-green-600 " : ""
+          }`}
         />
 
         <input
-          type="number"
+          type="text"
           name="digit3"
           value={otpDigits.digit3}
           onChange={handleInputChange}
-          className="box-border w-1/6 bg-red-500 text-slate-50"
+          className={`box-border w-1/5 h-14 bg-transparent  border rounded-xl cursor-pointer text-slate-50 text-3xl font-bold text-center p-2 outline-none ${
+            otpDigits.digit3 ? "border-4 border-green-600 " : ""
+          }`}
         />
 
         <input
-          type="number"
+          type="text"
           name="digit4"
           value={otpDigits.digit4}
           onChange={handleInputChange}
-          className="box-border w-1/6 bg-red-500 text-slate-50"
+          className={`box-border w-1/5 h-14 bg-transparent  border rounded-xl cursor-pointer text-slate-50 text-3xl font-bold text-center p-2 outline-none ${
+            otpDigits.digit4 ? "border-4 border-green-600 " : ""
+          }`}
         />
       </div>
 
-      <p className="resend">Resend OTP in 00.08</p>
+      <p className="resend box-border flex items-center text-lg tracking-wide text-zinc-500">
+        Resend OTP via
+      </p>
 
-      <div className="resendOptionDiv">
-        <button>
+      <div className="resendOptionDiv box-border flex items-center gap-6 ">
+        <button className="box-border flex items-center text-lg gap-0 cursor-pointer text-zinc-500 hover:text-zinc-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-4"
           >
             <path
               strokeLinecap="round"
@@ -102,14 +124,14 @@ function EnterOtpComp() {
           </svg>
           SMS
         </button>
-        <button>
+        <button className="box-border flex items-center text-lg gap-0 cursor-pointer text-zinc-500 hover:text-zinc-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-4"
           >
             <path
               strokeLinecap="round"
@@ -123,9 +145,9 @@ function EnterOtpComp() {
 
       {enterOtp && (
         <button
-          className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-16 rounded-2xl cursor-pointer mt-32 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700"
+          className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-14 rounded-2xl cursor-pointer mt-12 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700"
           onClick={() => {
-            navigate("/login/enter-otp");
+            navigate("/login/payment-option");
           }}
         >
           Continue
@@ -135,7 +157,11 @@ function EnterOtpComp() {
           />
         </button>
       )}
-      <p className="trouble box-border absolute top-20 text-zinc-500 text-lg mx-2 tracking-tight ">
+      <p
+        className={`trouble box-border  text-zinc-500 text-lg mx-2 tracking-tight ${
+          enterOtp ? "mt-2" : "mt-24"
+        }`}
+      >
         Having trouble logging in?
         <span className="trouble box-border text-blue-500 text-lg font-semibold mx-2 tracking-tight">
           Get Help

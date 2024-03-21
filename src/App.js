@@ -6,6 +6,7 @@ import Paywall from "./components/paywall/Paywall";
 import Login from "./components/login/Login";
 import GetOtpComp from "./components/login/GetOtpComp";
 import EnterOtpComp from "./components/login/EnterOtpComp";
+import PaymentOption from "./components/login/PaymentOption";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/login" element={<Login child="getOtp" />} />
 
         <Route path="/login/enter-otp" element={<Login child="enterOtp" />} />
+
+        <Route path="/login/payment-option" element={< PaymentOption />} />
         
       </Routes>
     </BrowserRouter>

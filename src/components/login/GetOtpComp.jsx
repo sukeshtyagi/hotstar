@@ -30,7 +30,7 @@ function GetOtpComp() {
   }, [mobNumber]);
 
   return (
-    <div className="rightDiv flex flex-col box-border w-1/2 h-full text-zinc-500 p-2 px-12 mt-16 relative">
+    <div className="rightDiv flex flex-col box-border w-1/2 h-full text-zinc-500 p-2 px-12 mt-16">
       <div className="inputFields box-border flex gap-4 relative">
         <input
           type="text"
@@ -66,7 +66,7 @@ function GetOtpComp() {
       </p>
       {getOpt && (
         <button
-          className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-12 rounded-2xl cursor-pointer mt-32 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500  hover:border-slate-50"
+          className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-12 rounded-2xl cursor-pointer mt-28 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500  hover:border-slate-50"
           onClick={() => {
             navigate("/login/enter-otp");
           }}
@@ -78,7 +78,11 @@ function GetOtpComp() {
           />
         </button>
       )}
-      <p className="trouble box-border absolute top-20 text-zinc-500 text-lg mx-2 tracking-tight pt-40 ">
+      <p
+        className={`trouble box-border text-zinc-500 text-lg mx-2 tracking-tight ${
+          getOpt ? "mt-0" : "mt-40"
+        }`}
+      >
         Having trouble logging in?
         <span className="trouble box-border text-blue-500 text-lg font-semibold mx-2 tracking-tight">
           Get Help
