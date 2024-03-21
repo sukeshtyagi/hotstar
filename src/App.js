@@ -11,12 +11,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/*" element={<ErrorPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/paywall" element={<Paywall />} />
-        <Route path="/login" element={<Login getOtp="enterOtp"/>} />
-        <Route path="/*" element={<ErrorPage />} />
+
+        <Route path="/login" element={<Login child="getOtp" />} />
+
+        <Route path="/login/enter-otp" element={<Login child="enterOtp" />} />
+        
       </Routes>
     </BrowserRouter>
   );
@@ -24,8 +28,5 @@ function App() {
 
 export default App;
 /*
- <Route
-          path="/login/enter-otp"
-          element={<Login enterOtp="enterOtp" enterOtpComp={<EnterOtpComp />} />}
-        />
+
 */

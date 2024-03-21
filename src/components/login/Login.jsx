@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Paywall from "../paywall/Paywall";
 import LoginHeader from "./LoginHeader";
 import GetOtpComp from "./GetOtpComp";
+import EnterOtpComp from "./EnterOtpComp";
 
-function Login({ getOtp }) {
+function Login({ child }) {
   return (
     <div className="box-border w-screen h-screen overflow-x-hidden">
       <Paywall />
@@ -33,7 +34,8 @@ function Login({ getOtp }) {
               </div>
               <div className="lowerDiv box-border w-1 h-36 text-center bg-gradient-to-b  from-slate-100 from-20% via-zinc-900 via-45% to-orange-400 to-100%"></div>
             </div>
-            {getOtp && <GetOtpComp />}
+            {child === "getOtp" && <GetOtpComp />}
+            {child === "enterOtp" && <EnterOtpComp />}
           </div>
         </div>
       </div>
