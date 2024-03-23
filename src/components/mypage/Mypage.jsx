@@ -43,11 +43,11 @@ function Mypage() {
   };
 
   return (
-    <div className="mypageContainer box-border w-screen  flex bg-black overflow-y-atuo">
-      <div className="leftDiv box-border sticky top-0 left-0 z-20">
+    <div className="mypageContainer box-border w-screen  flex bg-black overflow-y-atuo ">
+      <div className="leftDiv box-border fixed top-0 left-0 z-100">
         <Navbar />
       </div>
-      <div className="rightDiv box-border flex flex-col ">
+      <div className="rightDiv box-border w-10/12 flex flex-col m-auto ml-44">
         <div className="header box-border w-full h-full caret-transparent	flex justify-between items-center mt-14">
           <div className="leftDiv box-border">
             <p className="line1 box-border text-zinc-300 text-2xl font-semibold flex justify-start items-center gap-2 p-2 tracking-wide">
@@ -88,9 +88,9 @@ function Mypage() {
               <button
                 className="btnDiv box-border w-2/5 h- flex items-center justift-start gap-5 p-2 py-4 rounded-xl text-lg
               bg-zinc-600 hover:bg-zinc-500 text-xl font-semibold tracking-wide"
-              onClick={() => {
-                navigate("/help");
-              }}
+                onClick={() => {
+                  navigate("/help");
+                }}
               >
                 <CogIcon className="h-6 w-8 text-slate-100" />
                 Help & Settings
