@@ -8,7 +8,7 @@ import Movies from "../HomeComponents/Movies";
 import WebSeries from "../HomeComponents/WebSeries";
 import { CogIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
-
+import Footer from "../sharedComponents/Footer";
 function Mypage() {
   const navigate = useNavigate();
 
@@ -109,6 +109,7 @@ function Mypage() {
             {componentObj.component}
           </div>
         ))}
+        <Footer />
       </div>
     </div>
   );
