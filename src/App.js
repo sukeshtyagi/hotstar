@@ -1,12 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/HomeComponents/Home";
-import AboutUs from "./components/pages/AboutUs";
-import ErrorPage from "./components/pages/ErrorPage";
+import AboutUs from "./components/footerPages/AboutUs";
+import ErrorPage from "./components/footerPages/ErrorPage";
 import Paywall from "./components/paywall/Paywall";
 import Login from "./components/login/Login";
-import GetOtpComp from "./components/login/GetOtpComp";
-import EnterOtpComp from "./components/login/EnterOtpComp";
 import PaymentOption from "./components/login/PaymentOption";
+import Mypage from "./components/mypage/Mypage";
 
 function App() {
   return (
@@ -22,8 +21,9 @@ function App() {
 
         <Route path="/login/enter-otp" element={<Login child="enterOtp" />} />
 
-        <Route path="/login/payment-option" element={< PaymentOption />} />
-        
+        <Route path="/login/payment-option" element={<PaymentOption />} />
+
+        <Route path="/mypage" element={<Mypage />} />
       </Routes>
     </BrowserRouter>
   );

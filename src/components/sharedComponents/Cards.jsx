@@ -40,7 +40,7 @@ function Cards({
         </button>
       </div>
 
-      <div className="itemContainer box-border flex justify-evenly z-0 ">
+      <div className="itemContainer box-border flex justify-evenly gap-6 z-0 ">
         <div
           className="itemDiv w-44 h-64 p-2 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer"
           onMouseEnter={() => setIsHovered1(true)}
