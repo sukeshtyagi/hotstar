@@ -7,8 +7,11 @@ import TVShows from "../HomeComponents/TVShows";
 import Movies from "../HomeComponents/Movies";
 import WebSeries from "../HomeComponents/WebSeries";
 import { CogIcon } from "@heroicons/react/solid";
+import { useNavigate } from "react-router-dom";
 
 function Mypage() {
+  const navigate = useNavigate();
+
   const components = [
     { component: <PopularShows key="PopularShows" />, name: "PopularShows" },
     { component: <NewReleases key="NewReleases" />, name: "NewReleases" },
@@ -76,12 +79,18 @@ function Mypage() {
               hover:from-blue-700 from-40% 
               hover:to-blue-950 to-80%
               tracking-wide rounded-xl"
+                onClick={() => {
+                  navigate("/paywall");
+                }}
               >
                 Subscribe
               </button>
               <button
                 className="btnDiv box-border w-2/5 h- flex items-center justift-start gap-5 p-2 py-4 rounded-xl text-lg
               bg-zinc-600 hover:bg-zinc-500 text-xl font-semibold tracking-wide"
+              onClick={() => {
+                navigate("/help");
+              }}
               >
                 <CogIcon className="h-6 w-8 text-slate-100" />
                 Help & Settings
