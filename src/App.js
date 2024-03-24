@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/HomeComponents/Home";
+import Home from "./components/homePageComponents/Home";
 import AboutUs from "./components/footerPages/AboutUs";
 import ErrorPage from "./components/footerPages/ErrorPage";
 import Paywall from "./components/paywall/Paywall";
 import Login from "./components/login/Login";
 import PaymentOption from "./components/login/PaymentOption";
-import Mypage from "./components/mypage/Mypage";
-import Explore from "./components/explore/Explore";
-import Shows from "./components/shows/Shows";
+import Mypage from "./components/navbarLinks/Mypage";
+import Explore from "./components/navbarLinks/Explore";
+import Shows from "./components/navbarLinks/Shows";
 
 function App() {
   return (

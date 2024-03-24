@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../sharedComponents/Navbar";
-import PopularShows from "../HomeComponents/PopularShows";
-import NewReleases from "../HomeComponents/NewReleases";
-import TopRated from "../HomeComponents/TopRated";
-import TVShows from "../HomeComponents/TVShows";
-import Movies from "../HomeComponents/Movies";
-import WebSeries from "../HomeComponents/WebSeries";
+import PopularShows from "../homePageComponents/PopularShows";
+import NewReleases from "../homePageComponents/NewReleases";
+import TopRated from "../homePageComponents/TopRated";
+import TVShows from "../homePageComponents/TVShows";
+import Movies from "../homePageComponents/Movies";
+import WebSeries from "../homePageComponents/WebSeries";
 import { CogIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
 import Footer from "../sharedComponents/Footer";
