@@ -8,6 +8,7 @@ import PaymentOption from "./components/login/PaymentOption";
 import Mypage from "./components/navbarLinks/Mypage";
 import Explore from "./components/navbarLinks/Explore";
 import Shows from "./components/navbarLinks/Shows";
+import Movies from "./components/navbarLinks/Movies";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/shows" element={<Shows />} />
+        <Route path="/movies" element={<Movies />} />
       </Routes>
     </BrowserRouter>
   );
