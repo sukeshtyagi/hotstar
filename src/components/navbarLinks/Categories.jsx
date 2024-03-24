@@ -15,6 +15,19 @@ function Categories() {
 
         <div className="card mt-8">
           <Cards
+            parent="partners"
+            item1="/images/sponsers/ps1.jpeg"
+            item2="/images/sponsers/ps2.jpg"
+            item3="/images/sponsers/ps3.jpg"
+            item4="/images/sponsers/ps4.jpeg"
+            item5="/images/sponsers/ps5.jpg"
+            item6="/images/sponsers/ps6.jpg"
+            item7="/images/sponsers/ps7.jpeg"
+          />
+        </div>
+
+        <div className="card mt-8">
+          <Cards
             parent="categories"
             category="Popular Languages"
             item1="/images/lang/lg1.jpg"
@@ -40,6 +53,21 @@ function Categories() {
             item6="/images/channels/ch2.jpeg"
             item7="/images/channels/ch1.jpeg"
             link="/popular-channels"
+          />
+        </div>
+
+        <div className="card mt-8">
+          <Cards
+            parent="sports"
+            category="Popular Sports"
+            item1="/images/sports/ps1.jpeg"
+            item2="/images/sports/ps2.jpg"
+            item3="/images/sports/ps3.jpeg"
+            item4="/images/sports/ps4.jpg"
+            item5="/images/sports/ps5.jpg"
+            item6="/images/sports/ps6.jpg"
+            item7="/images/sports/ps7.jpg"
+            link="/sports"
           />
         </div>
 
