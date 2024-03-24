@@ -330,8 +330,8 @@ function Cards({
 
         <div
           className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
-          onMouseEnter={() => setIsHovered7(true)}
-          onMouseLeave={() => setIsHovered7(false)}
+          onMouseEnter={() => setIsHovered6(true)}
+          onMouseLeave={() => setIsHovered6(false)}
         >
           <img src={item6} alt="" className="box-border w-44 h-64" />
 
@@ -386,8 +386,8 @@ function Cards({
 
         <div
           className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
-          onMouseEnter={() => setIsHovered6(true)}
-          onMouseLeave={() => setIsHovered6(false)}
+          onMouseEnter={() => setIsHovered7(true)}
+          onMouseLeave={() => setIsHovered7(false)}
         >
           <img src={item7} alt="" className="box-border w-44 h-64" />
 

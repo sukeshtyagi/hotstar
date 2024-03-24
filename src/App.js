@@ -7,6 +7,7 @@ import Login from "./components/login/Login";
 import PaymentOption from "./components/login/PaymentOption";
 import Mypage from "./components/mypage/Mypage";
 import Explore from "./components/explore/Explore";
+import Shows from "./components/shows/Shows";
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
         <Route path="/login/payment-option" element={<PaymentOption />} />
 
         <Route path="/mypage" element={<Mypage />} />
-
         <Route path="/explore" element={<Explore />} />
+        <Route path="/shows" element={<Shows />} />
       </Routes>
     </BrowserRouter>
   );
