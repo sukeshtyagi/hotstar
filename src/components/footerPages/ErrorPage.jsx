@@ -6,7 +6,7 @@ function ErrorPage() {
   return (
     <div className="flex flex-col gap-12 justify-center items-center w-screen h-screen bg-black">
       <img
-        src="/images/l2.png"
+        src="/images/logo.jpg"
         alt="disney + hotstar logo"
         width={400}
         className="cursor-pointer"

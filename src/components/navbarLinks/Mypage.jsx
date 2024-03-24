@@ -25,9 +25,11 @@ function Mypage() {
 
   useEffect(() => {
     const mobNumber = localStorage.getItem("mobNumber");
-    const indexesToMask = [6, 7, 8, 9, 10];
-    const maskedNumber = maskMobileNumber(mobNumber, indexesToMask);
-    setMaskedMobNumber(maskedNumber);
+    if (mobNumber) {
+      const indexesToMask = [6, 7, 8, 9, 10];
+      const maskedNumber = maskMobileNumber(mobNumber, indexesToMask);
+      setMaskedMobNumber(maskedNumber);
+    }
   }, []);
 
   const maskMobileNumber = (mobNumber, indexesToMask) => {

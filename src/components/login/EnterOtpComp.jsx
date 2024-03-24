@@ -147,7 +147,7 @@ function EnterOtpComp() {
         <button
           className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-14 rounded-2xl cursor-pointer mt-12 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700"
           onClick={() => {
-            navigate("/login/payment-option");
+            navigate("/mypage");
           }}
         >
           Continue
