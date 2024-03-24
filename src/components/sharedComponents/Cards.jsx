@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ChevronRightIcon, PlusIcon } from "@heroicons/react/outline";
 
 function Cards({
+  parent,
   category,
   item1,
   item2,
@@ -55,7 +56,7 @@ function Cards({
         >
           <img src={item1} alt="" className="box-border w-44 h-64" />
 
-          {isHovered1 && (
+          {isHovered1 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>
@@ -111,7 +112,7 @@ function Cards({
         >
           <img src={item2} alt="" className="box-border w-44 h-64" />
 
-          {isHovered2 && (
+          {isHovered2 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>
@@ -167,7 +168,7 @@ function Cards({
         >
           <img src={item3} alt="" className="box-border w-44 h-64" />
 
-          {isHovered3 && (
+          {isHovered3 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>
@@ -223,7 +224,7 @@ function Cards({
         >
           <img src={item4} alt="" className="box-border w-44 h-64" />
 
-          {isHovered4 && (
+          {isHovered4 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>
@@ -279,7 +280,7 @@ function Cards({
         >
           <img src={item5} alt="" className="box-border w-44 h-64" />
 
-          {isHovered5 && (
+          {isHovered5 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>
@@ -335,7 +336,7 @@ function Cards({
         >
           <img src={item6} alt="" className="box-border w-44 h-64" />
 
-          {isHovered6 && (
+          {isHovered6 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>
@@ -391,7 +392,7 @@ function Cards({
         >
           <img src={item7} alt="" className="box-border w-44 h-64" />
 
-          {isHovered7 && (
+          {isHovered7 && !parent && (
             <>
               <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
                 <p className="text-white text-xs">Hindi</p>

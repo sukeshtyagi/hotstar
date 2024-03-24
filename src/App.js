@@ -9,6 +9,7 @@ import Mypage from "./components/navbarLinks/Mypage";
 import Explore from "./components/navbarLinks/Explore";
 import Shows from "./components/navbarLinks/Shows";
 import Movies from "./components/navbarLinks/Movies";
+import Categories from "./components/navbarLinks/Categories";
 
 function App() {
   return (
@@ -30,12 +31,10 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/shows" element={<Shows />} />
         <Route path="/movies" element={<Movies />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-/*
-
-*/
