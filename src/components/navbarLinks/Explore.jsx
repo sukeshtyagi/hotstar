@@ -33,7 +33,7 @@ function Explore() {
           />
         </div>
 
-        <div className="footerDiv box-border w-full h-fit mt-8 z-0 border-t-4">
+        <div className="cardsDiv box-border w-full h-fit mt-8 z-0 border-t-4">
           <Cards
             item1="/images/explore/e11.jpg"
             item2="/images/explore/e12.jpeg"
@@ -47,15 +47,12 @@ function Explore() {
         <div className="footerDiv box-border w-full h-fit mt-8 z-0 border-t-4">
           <Cards
             item1="/images/newReleases/nr1.jpg"
-            item2="/images/newReleases/nr2.avif"
-            item3="/images/newReleases/nr3.webp"
+            item2="/images/newReleases/nr2.jpg"
+            item3="/images/newReleases/nr3.png"
             item4="/images/newReleases/nr4.jpg"
-            item5="/images/newReleases/nr5.webp"
-            item6="/images/newReleases/nr6.jpeg"
-            item7="/images/newReleases/nr7.jpeg"
-            item8="/images/newReleases/nr8.png"
-            item9="/images/newReleases/nr9.jpg"
-            item10="/images/newReleases/nr10.jpg"
+            item5="/images/newReleases/nr5.jpg"
+            item6="/images/newReleases/nr6.jpg"
+            item7="/images/newReleases/nr7.jpg"
           />
         </div>
 
@@ -63,26 +60,23 @@ function Explore() {
           <Cards
             item1="/images/popularShows/dkdm.jpg"
             item2="/images/popularShows/ps2.jpg"
-            item3="/images/popularShows/ps3.jpeg"
-            item4="/images/popularShows/ps4.jpeg"
-            item5="/images/popularShows/ps5.jpeg"
-            item6="/images/popularShows/ps6.webp"
-            item7="/images/popularShows/ps7.webp"
-            item8="/images/popularShows/ps8.webp"
-            item9="/images/popularShows/ps9.webp"
-            item10="/images/popularShows/ps10.webp"
+            item3="/images/popularShows/ps3.jpg"
+            item4="/images/popularShows/ps4.jpg"
+            item5="/images/popularShows/ps5.jpg"
+            item6="/images/popularShows/ps6.jpg"
+            item7="/images/popularShows/ps7.jpg"
           />
         </div>
 
         <div className="footerDiv box-border w-full h-fit mt-8 z-0 border-t-4">
           <Cards
-            item1="/images/topRated/tr1.jpeg"
+            item1="/images/topRated/tr1.jpg"
             item2="/images/topRated/tr2.jpg"
             item3="/images/topRated/tr3.jpg"
-            item4="/images/topRated/tr4.webp"
+            item4="/images/topRated/tr6.jpg"
             item5="/images/topRated/tr5.jpg"
-            item6="/images/topRated/tr6.jpg"
-            item7="/images/topRated/tr7.webp"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
           />
         </div>
 
