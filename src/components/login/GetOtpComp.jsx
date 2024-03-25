@@ -66,7 +66,7 @@ function GetOtpComp() {
       </p>
       {getOpt && (
         <button
-          className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-12 rounded-2xl cursor-pointer mt-28 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500  hover:border-slate-50"
+          className="box-border flex items-center justify-center gap-4 p-2 text-2xl text-white w-full h-12 rounded-2xl cursor-pointer mt-24 bg-gradient-to-r from-violet-500 via-purple-900 to-red-700  hover:from-pink-500 hover:to-yellow-500  hover:border-slate-50"
           onClick={() => {
             navigate("/login/enter-otp");
           }}
@@ -80,7 +80,7 @@ function GetOtpComp() {
       )}
       <p
         className={`trouble box-border text-zinc-500 text-lg mx-2 tracking-tight ${
-          getOpt ? "mt-0" : "mt-40"
+          getOpt ? "mt-0" : "mt-36"
         }`}
       >
         Having trouble logging in?

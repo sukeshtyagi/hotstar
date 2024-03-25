@@ -7,15 +7,12 @@ function PopularShows() {
       category="Popular Shows"
       item1="/images/popularShows/dkdm.jpg"
       item2="/images/popularShows/ps2.jpg"
-      item3="/images/popularShows/ps3.jpeg"
-      item4="/images/popularShows/ps4.jpeg"
-      item5="/images/popularShows/ps5.jpeg"
-      item6="/images/popularShows/ps2.jpg"
-      item7="/images/popularShows/ps4.jpeg"
-      item8="/images/popularShows/ps2.jpg"
-      item9="/images/popularShows/ps4.jpeg"
-      item10="/images/popularShows/nr1.jpg"
-      link='/popular-shows'
+      item3="/images/popularShows/ps3.jpg"
+      item4="/images/popularShows/ps4.jpg"
+      item5="/images/popularShows/ps5.jpg"
+      item6="/images/popularShows/ps6.jpg"
+      item7="/images/popularShows/ps7.jpg"
+      link="/popular-shows"
     />
   );
 }
