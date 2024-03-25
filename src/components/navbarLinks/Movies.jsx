@@ -45,7 +45,7 @@ function Movies() {
               <div className="headerRightDiv box-border w-full h-full flex flex-col items-start justify-center gap-5">
                 <div className="topDiv box-border flex items-center justify-start gap-5">
                   <img
-                    src="/images/common/HotstarSpecialogo.jpeg"
+                    src="/images/common/hotstarspecial.jpg"
                     alt=""
                     className="box-border w-20 "
                   />
@@ -75,13 +75,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Action movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -89,13 +89,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Top movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -103,13 +103,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="New movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -117,13 +117,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Comedy movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -131,13 +131,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Thriller"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -145,13 +145,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Romance movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -159,13 +159,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Action movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -173,13 +173,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Tollywood"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
@@ -187,13 +187,13 @@ function Movies() {
         <div className="card mt-8">
           <Cards
             category="Hollywood movies"
-            item1="/images/star/star1.jpg"
-            item2="/images/star/star2.jpeg"
-            item3="/images/star/star3.jpg"
-            item4="/images/star/star4.jpeg"
-            item5="/images/star/star5.jpeg"
-            item6="/images/star/star6.jpg"
-            item7="/images/star/star7.jpg"
+            item1="/images/topRated/tr1.jpg"
+            item2="/images/topRated/tr2.jpg"
+            item3="/images/topRated/tr3.jpg"
+            item4="/images/topRated/tr6.jpg"
+            item5="/images/topRated/tr5.jpg"
+            item6="/images/topRated/tr2.jpg"
+            item7="/images/topRated/tr1.jpg"
             link="/star-shows"
           />
         </div>
