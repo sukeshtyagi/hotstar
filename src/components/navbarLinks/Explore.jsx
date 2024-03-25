@@ -36,8 +36,8 @@ function Explore() {
         <div className="cardsDiv box-border w-full h-fit mt-8 z-0 border-t-4">
           <Cards
             item1="/images/explore/e11.jpg"
-            item2="/images/explore/e12.jpeg"
-            item3="/images/explore/e13.jpeg"
+            item2="/images/explore/e12.jpg"
+            item3="/images/explore/e13.jpg"
             item4="/images/explore/e14.jpg"
             item5="/images/explore/e15.jpg"
             item6="/images/explore/e16.jpg"
