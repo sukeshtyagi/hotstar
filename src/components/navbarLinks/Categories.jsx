@@ -16,13 +16,13 @@ function Categories() {
         <div className="card mt-8">
           <Cards
             parent="partners"
-            item1="/images/sponsers/ps1.jpeg"
+            item1="/images/sponsers/ps1.png"
             item2="/images/sponsers/ps2.jpg"
             item3="/images/sponsers/ps3.jpg"
-            item4="/images/sponsers/ps4.jpeg"
+            item4="/images/sponsers/ps4.jpg"
             item5="/images/sponsers/ps5.jpg"
             item6="/images/sponsers/ps6.jpg"
-            item7="/images/sponsers/ps7.jpeg"
+            item7="/images/sponsers/ps7.jpg"
           />
         </div>
 
