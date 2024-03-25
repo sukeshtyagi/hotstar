@@ -60,9 +60,9 @@ function Categories() {
           <Cards
             parent="sports"
             category="Popular Sports"
-            item1="/images/sports/ps1.jpeg"
+            item1="/images/sports/ps1.jpg"
             item2="/images/sports/ps2.jpg"
-            item3="/images/sports/ps3.jpeg"
+            item3="/images/sports/ps3.jpg"
             item4="/images/sports/ps4.jpg"
             item5="/images/sports/ps5.jpg"
             item6="/images/sports/ps6.jpg"
