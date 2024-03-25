@@ -45,7 +45,7 @@ function Movies() {
               <div className="headerRightDiv box-border w-full h-full flex flex-col items-start justify-center gap-5">
                 <div className="topDiv box-border flex items-center justify-start gap-5">
                   <img
-                    src="/images/common/hotstarspecial.jpg"
+                    src="/images/common/hotstarspecial.png"
                     alt=""
                     className="box-border w-20 "
                   />
