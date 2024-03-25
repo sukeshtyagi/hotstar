@@ -33,9 +33,9 @@ function Categories() {
             item1="/images/lang/lg1.jpg"
             item2="/images/lang/lg2.jpg"
             item3="/images/lang/lg3.jpg"
-            item4="/images/lang/lg4.jpeg"
+            item4="/images/lang/lg4.png"
             item5="/images/lang/lg5.jpg"
-            item6="/images/lang/lg6.jpeg"
+            item6="/images/lang/lg6.jpg"
             item7="/images/lang/lg7.jpg"
             link="/langages"
           />
@@ -44,14 +44,14 @@ function Categories() {
         <div className="card mt-8">
           <Cards
             parent="Popular Channels"
-            category="Popular Languages"
-            item1="/images/channels/ch1.jpeg"
-            item2="/images/channels/ch2.jpeg"
-            item3="/images/channels/ch3.jpeg"
-            item4="/images/channels/ch4.jpeg"
-            item5="/images/channels/ch5.jpeg"
-            item6="/images/channels/ch2.jpeg"
-            item7="/images/channels/ch1.jpeg"
+            category="Popular Channels"
+            item1="/images/channels/ch1.jpg"
+            item2="/images/channels/ch2.png"
+            item3="/images/channels/ch3.jpg"
+            item4="/images/channels/ch4.png"
+            item5="/images/channels/ch5.jpg"
+            item6="/images/channels/ch2.png"
+            item7="/images/channels/ch1.jpg"
             link="/popular-channels"
           />
         </div>
