@@ -5,13 +5,13 @@ function WebSeries() {
   return (
     <Cards
       category="Web Series"
-      item1="/images/topRated/tr1.jpeg"
-      item2="/images/topRated/tr2.jpg"
-      item3="/images/topRated/tr3.jpg"
-      item4="/images/topRated/tr4.webp"
-      item5="/images/topRated/tr5.jpg"
-      item6="/images/topRated/tr6.jpg"
-      item7="/images/topRated/tr7.webp"
+      item1="/images/webseries/ws1.jpg"
+      item2="/images/webseries/ws2.jpg"
+      item3="/images/webseries/ws3.jpg"
+      item4="/images/webseries/ws4.jpg"
+      item5="/images/webseries/ws5.jpg"
+      item6="/images/webseries/ws6.jpg"
+      item7="/images/webseries/ws7.jpg"
       link="/new-releases"
     />
   );
