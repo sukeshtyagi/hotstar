@@ -18,10 +18,11 @@ module.exports = {
         100: "100",
       },
       screens: {
-        'sbp': '520px',
-        'wbp': '930px',
-
-    },}
+        xsbp: "300px",
+        sbp: "520px",
+        wbp: "930px",
+      },
+    },
   },
   plugins: [],
 };

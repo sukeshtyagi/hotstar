@@ -64,7 +64,7 @@ function Footer() {
           <p className="heading p-2 w-max text-slate-100 text-red-900 text-lg font-medium">
             Connect with us
           </p>
-          <div className="logos flex justify-evenly align-center">
+          <div className="logos flex flex-wrap justify-evenly align-center">
             <img
               src="/images/fblogo.jpg"
               alt="fb logo"
@@ -90,7 +90,7 @@ function Footer() {
           <p className="coypright">&copy; 2024 STAR.All right reserved</p>
           <p className="tnc">Terms of Use Privacy Policy FAQ</p>
         </div>
-        <div className="imgDiv flex justify-evenly items-center ">
+        <div className="imgDiv flex flex-wrap justify-evenly items-center ">
           <img
             src="/images/googleplaystore.jpg"
             alt="googleplaystore logo"

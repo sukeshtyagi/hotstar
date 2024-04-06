@@ -12,23 +12,24 @@ function Header() {
   };
 
   return (
-    <div className="headerContainer w-10/12 m-auto box-border flex justify-between items-center sticky top-0 left-0 py-12">
-      <div className="leftDiv box-border flex justify-start gap-4 items-center">
+    <div className="headerContainer box-border w-full xsbp:w-4/5 sbp:3/4 m-auto py-2 rounded-xl flex flex-wrap justify-between items-center sticky top-0 left-0  bg-black">
+      <div className="leftDiv box-border ml-2 flex justify-start gap-0 items-center p-0 ">
         <XIcon
-          className="box-border w-12 text-white relative top-1"
+          className="box-border w-4 m-0 text-white relative top-px"
           onClick={() => {
-            navigate("/home");
+            navigate("/home");  
           }}
         />
-        <img src="/images/logo.jpg" alt="" className="box-border w-44 h-28" />
+        <img src="/images/logo.jpg" alt="" className="box-border w-12 " />
       </div>
-      <div className="rightDiv box-border flex justify-start items-center gap-4">
+
+      <div className="rightDiv box-border h-auto mr-1 flex flex-wrap justify-start items-center gap-2">
         <div
-          className="languageDiv w-48 h-16 box-border flex justify-center gap-2 items-center border border-green-500 border-2 rounded-xl cursor-pointer bg-gradient-to-r from-blue-500 via-yellow-500 to-red-200"
+          className="languageDiv box-border px-1  py-px flex justify-center items-center gap-1 border border-green-500 rounded-lg cursor-pointer bg-gradient-to-r from-blue-500 via-yellow-500 to-red-200"
           onClick={toggleDropdown}
         >
-          <p className="text-white text-2xl font-bold">{languageSelected}</p>
-          <ChevronDownIcon className="box-border w-6 text-white" />
+          <p className="box-border text-white text-[10px]">{languageSelected}</p>
+          <ChevronDownIcon className="box-border w-4 text-white" />
         </div>
 
         {isDropdownOpen && (
@@ -117,9 +118,9 @@ function Header() {
           </div>
         )}
 
-        <div className="loginDiv w-48 h-16 box-border flex justify-center items-center border border-green-500 border-2 rounded-xl px-8 bg-gradient-to-r from-blue-500 via-purple-900 to-red-500 font-serif cursor-pointer  ">
+        <div className="languageDiv box-border px-3 py-px flex justify-center items-center gap-1 border border-green-500 rounded-lg cursor-pointer bg-gradient-to-r from-blue-500 via-purple-900 to-red-500">
           <button
-            className="login text-white text-2xl font-bold"
+            className="login text-white text-[10px]"
             onClick={() => {
               navigate("/login");
             }}
