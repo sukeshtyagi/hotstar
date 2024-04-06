@@ -41,7 +41,7 @@ function Cards({
         </div>
       )}
 
-      <div className="itemContainer box-border flex flex-wrap wbp:flex-nowrap gap-5 justify-start items-center">
+      <div className="itemContainer box-border flex flex-wrap wbp:flex-nowrap gap-5 justify-center items-center">
         <div
           className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered1(true)}
