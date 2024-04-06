@@ -17,7 +17,11 @@ module.exports = {
       zIndex: {
         100: "100",
       },
-    },
+      screens: {
+        'sbp': '520px',
+        'wbp': '930px',
+
+    },}
   },
   plugins: [],
 };

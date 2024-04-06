@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../sharedComponents/Navbar";
+import Navbar from "../sharedComponents/VerticalNavbar";
 import Footer from "../sharedComponents/Footer";
 import Cards from "../sharedComponents/Cards";
 

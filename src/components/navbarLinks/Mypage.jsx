@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../sharedComponents/Navbar";
+import Navbar from "../sharedComponents/VerticalNavbar";
 import PopularShows from "../homePageComponents/PopularShows";
 import NewReleases from "../homePageComponents/NewReleases";
 import TopRated from "../homePageComponents/TopRated";

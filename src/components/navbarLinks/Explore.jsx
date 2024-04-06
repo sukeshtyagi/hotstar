@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../sharedComponents/Footer";
-import Navbar from "../sharedComponents/Navbar";
+import Navbar from "../sharedComponents/VerticalNavbar";
 import Cards from "../sharedComponents/Cards";
 
 function Explore() {

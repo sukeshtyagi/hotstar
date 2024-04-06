@@ -1,5 +1,6 @@
-import React from "react";
-import Navbar from "../sharedComponents/Navbar";
+import React, { useState } from "react";
+import VerticalNavbar from "../sharedComponents/VerticalNavbar";
+import HorizontalNavbar from "../sharedComponents/HorizontalNavbar";
 import Footer from "../sharedComponents/Footer";
 import PopularShows from "./PopularShows";
 import NewReleases from "./NewReleases";
@@ -19,19 +20,24 @@ function Home() {
   ];
 
   return (
-    <div className="homeContainer flex h-fit w-screen justify-start bg-black z-0">
-      <div className="leftDiv box-border fixed top-0 left-0 z-20">
-        <Navbar />
+    <div className="homeContainer box-border h-fit w-screen bg-black justify-start z-0 flex flex-col sbp:flex-row">
+      <div className="leftDivVerticalNavbar box-border fixed top-0 left-0 z-20 hidden sbp:block">
+        <VerticalNavbar />
       </div>
 
-      <div className="rightDiv box-border ml-44 w-10/12 h-full flex flex-col justify-start gap-0 z-0">
-        <div className="posterDiv p-4 bg-gradient-to-l from-yellow-200 mt-8 z-0">
+      <div className="leftDivHorizontalNavbar box-border fixed top-0 left-0 my-8 z-20 block sbp:hidden">
+        <HorizontalNavbar />
+      </div>
+
+      <div className="rightDiv box-border mx-auto mt-40 sbp:ml-48 sbp:mr-2 sbp:mt-24 w-4/5 h-full flex flex-col justify-start gap-0 z-0">
+        <div className="posterDiv p-2 border border-x-yellow-500 border-y-purple-700 z-0">
           <img
             src="/images/common/p3.jpg"
             alt="poster "
-            className="text-slate-50 mt-0 w-full h-96"
+            className="text-slate-50 mt-0  h-96"
           />
         </div>
+
         {components.map((componentObj, index) => (
           <div
             key={index}
@@ -40,7 +46,6 @@ function Home() {
             {componentObj.component}
           </div>
         ))}
-
         <div className="footerDiv box-border w-full h-fit mt-8 z-0 border-t-4">
           <Footer />
         </div>

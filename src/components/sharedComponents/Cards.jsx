@@ -12,9 +12,6 @@ function Cards({
   item5,
   item6,
   item7,
-  item8,
-  item9,
-  item10,
   link,
 }) {
   const navigate = useNavigate();
@@ -29,12 +26,12 @@ function Cards({
   return (
     <div className="outer  box-border flex flex-col gap-0 mb-14 z-0 border-t-4	">
       {category && (
-        <div className="headingDiv box-border flex justify-between item-center mt-4 z-0 ">
-          <h3 className="heading text-slate-50 text-3xl font-extrabold z-0 ">
+        <div className="headingDiv box-border text-sm sbp:text-lg flex justify-between item-center mt-4 z-0 ">
+          <h3 className="heading text-slate-50  font-extrabold z-0 ">
             {category}
           </h3>
           <button
-            className="text-slate-400 mr-0 font-bold bg-transparent "
+            className="text-slate-400 font-bold bg-transparent "
             onClick={() => {
               navigate(`${link}`);
             }}
@@ -44,40 +41,36 @@ function Cards({
         </div>
       )}
 
-      <div
-        className={`itemContainer box-border flex justify-start z-0 items-center ${
-          category ? "mt-0" : "mt-12"
-        }`}
-      >
+      <div className="itemContainer box-border flex flex-wrap wbp:flex-nowrap gap-5 justify-start items-center">
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+          className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
         >
-          <img src={item1} alt="" className="box-border w-44 h-64" />
+          <img src={item1} alt="" className="box-border w-32 h-64" />
 
           {isHovered1 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+              <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border w-1/2 h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
-                      className="h-3 w-5 text-slate-50  "
+                      className="h-3 w-5 text-white  "
                       aria-hidden="true"
                     />
                   </div>
@@ -85,17 +78,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -106,32 +99,32 @@ function Cards({
         </div>
 
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+          className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
         >
-          <img src={item2} alt="" className="box-border w-44 h-64" />
+          <img src={item2} alt="" className="box-border w-32 h-64" />
 
           {isHovered2 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+              <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                  <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border w-1/2 h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
                       className="h-3 w-5 text-slate-50  "
                       aria-hidden="true"
@@ -141,17 +134,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -162,32 +155,32 @@ function Cards({
         </div>
 
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+          className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered3(true)}
           onMouseLeave={() => setIsHovered3(false)}
         >
-          <img src={item3} alt="" className="box-border w-44 h-64" />
+          <img src={item3} alt="" className="box-border w-32 h-64" />
 
           {isHovered3 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+               <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                  <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border w-1/2 h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
                       className="h-3 w-5 text-slate-50  "
                       aria-hidden="true"
@@ -197,17 +190,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -218,32 +211,32 @@ function Cards({
         </div>
 
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+          className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered4(true)}
           onMouseLeave={() => setIsHovered4(false)}
         >
-          <img src={item4} alt="" className="box-border w-44 h-64" />
+          <img src={item4} alt="" className="box-border w-32 h-64" />
 
           {isHovered4 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+              <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                  <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border h-11/12 w-1/2 flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
                       className="h-3 w-5 text-slate-50  "
                       aria-hidden="true"
@@ -253,17 +246,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -274,32 +267,32 @@ function Cards({
         </div>
 
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+          className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered5(true)}
           onMouseLeave={() => setIsHovered5(false)}
         >
-          <img src={item5} alt="" className="box-border w-44 h-64" />
+          <img src={item5} alt="" className="box-border w-32 h-64" />
 
           {isHovered5 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+              <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                  <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border w-1/2 h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
                       className="h-3 w-5 text-slate-50  "
                       aria-hidden="true"
@@ -309,17 +302,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with tales
                     that leave you craving for more."
                   </p>
@@ -330,32 +323,32 @@ function Cards({
         </div>
 
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+        className="itemDiv box-border w-44 h-64 mt-4 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered6(true)}
           onMouseLeave={() => setIsHovered6(false)}
         >
-          <img src={item6} alt="" className="box-border w-44 h-64" />
+          <img src={item6} alt="" className="box-border w-32 h-64" />
 
           {isHovered6 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+              <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                  <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border w-1/2 h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
                       className="h-3 w-5 text-slate-50  "
                       aria-hidden="true"
@@ -365,17 +358,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with talesthat
                     leave you craving for more."
                   </p>
@@ -386,32 +379,32 @@ function Cards({
         </div>
 
         <div
-          className="itemDiv w-44 h-64 p-2 mt-4 relative hover:z-100 hover:scale-x-220 hover:scale-y-150  cursor-pointer"
+         className="itemDiv box-border w-44 h-64 mt-6 hover:z-100 relative hover:scale-x-220 hover:scale-y-150  cursor-pointer "
           onMouseEnter={() => setIsHovered7(true)}
           onMouseLeave={() => setIsHovered7(false)}
         >
-          <img src={item7} alt="" className="box-border w-44 h-64" />
+          <img src={item7} alt="" className="box-border w-32 h-64" />
 
           {isHovered7 && !parent && (
             <>
-              <div className="transparentDiv flex flex-col justify-start items-start bg-transparent z-50 absolute top-2 left-2 w-11/12 h-1/2 p-2">
+              <div className="transparentDiv box-border flex flex-col justify-start items-start bg-transparent z-50 absolute top-0 left-0 w-full h-1/2 p-px">
                 <p className="text-white text-xs">Hindi</p>
                 <button className="text-green-500	 text-xs font-bold">
                   Hotstar Special
                 </button>
               </div>
 
-              <div className="coloredDiv flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute -bottom-2 left-2 w-11/12 h-1/2">
+              <div className="coloredDiv box-border flex flex-col justify-start gap-1 items-start bg-zinc-500 absolute bottom-0 left-0 w-3/4 h-1/2">
                 <div className="topDiv box-border flex items-center justify-evenly  w-full p-0">
-                  <div className="watchDiv box-border flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
+                  <div className="watchDiv box-border w-1/2 flex justify-center items-center bg-slate-100 border-solid rounded-md p-2">
                     <ChevronRightIcon
                       className="h-3 w-5 text-black"
                       aria-hidden="true"
                     />
-                    <p className="text-sm">Watch</p>
+                    <p className="text-[10px]">Watch</p>
                   </div>
 
-                  <div className="saveDiv box-border h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
+                  <div className="saveDiv box-border w-1/2 h-11/12  flex items-center rounded-md border-slate-50	border-2 p-2 ">
                     <PlusIcon
                       className="h-3 w-5 text-slate-50  "
                       aria-hidden="true"
@@ -421,17 +414,17 @@ function Cards({
 
                 <div className="midDiv box-border w-full flex flex-col justify-evenly gap-1 text-slate-50">
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">2023.</p>
-                    <p className="box-border text-xs">1 Season.</p>
+                    <p className="box-border text-[9px]">2023.</p>
+                    <p className="box-border text-[9px]">1 Season.</p>
                   </div>
                   <div className=" box-border w-full flex justify-evenly">
-                    <p className="box-border text-xs">6 Languages.</p>
-                    <p className="box-border text-xs">U/A 7+.</p>
+                    <p className="box-border text-[9px]">6 Languages.</p>
+                    <p className="box-border text-[9px]">U/A 7+.</p>
                   </div>
                 </div>
 
                 <div className="bottomDiv box-border overflow-hidden">
-                  <p className="box-border w-full h-full text-slate-100 text-xs font-normal text-left text-ellipsis leading-3	">
+                  <p className="box-border w-full h-full text-slate-100 text-[9px] font-normal text-left text-ellipsis leading-3	">
                     "Experience the magic of captivating stories, with talesthat
                     leave you craving for more."
                   </p>

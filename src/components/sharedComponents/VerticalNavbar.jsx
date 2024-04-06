@@ -11,14 +11,14 @@ import {
 } from "@heroicons/react/outline";
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function VerticalNavbar() {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className={`overallContainer box-border w-fit h-screen pt-20 pl-10 transition-all duration-300 text-slate-400 caret-transparent ${
-        isHovered ? "w-screen bg-overlay " : "bg-transparent"
+      className={`overallContainer box-border  h-screen pt-20 pl-10 transition-all duration-300 text-slate-400 caret-transparent ${
+        isHovered ? "w-screen bg-overlay " : ""
       }`}
     >
       <div className="logoContainer box-border w-fit h-fit">
@@ -197,4 +197,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default VerticalNavbar;
