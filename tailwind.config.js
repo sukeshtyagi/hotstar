@@ -19,6 +19,7 @@ module.exports = {
       },
       screens: {
         xsbp: "300px",
+        otpbp: "450px",
         sbp: "520px",
         wbp: "930px",
       },

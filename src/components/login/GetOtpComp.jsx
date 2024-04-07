@@ -30,30 +30,33 @@ function GetOtpComp() {
   }, [mobNumber]);
 
   return (
-    <div className="rightDiv flex flex-col box-border w-1/2 h-full text-zinc-500 p-2 px-12 mt-16">
-      <div className="inputFields box-border flex gap-4 relative">
+    <div className="rightDiv box-border w-full flex flex-col  h-full text-zinc-500 p-0 px-0 mt-6 ">
+      <div className="inputFields box-border w-11/12 h-12 mx-auto flex gap-4 ">
         <input
           type="text"
           name=""
           placeholder="+91"
-          className="box-border w-1/6 h-18 border outline-none rounded-xl text-center text-3xl text-zinc-500 bg-transparent border border-2 border-slate-100 p-2 cursor-not-allowed"
+          className="box-border w-1/6 border outline-none rounded-xl text-center text-lg text-zinc-500 bg-transparent border border-slate-100 cursor-not-allowed"
           style={{ caretColor: "transparent" }}
         />
-        <input
-          type="text"
-          name=""
-          value={mobNumber}
-          onChange={handleMobNumber}
-          placeholder="0123456789"
-          maxlength="10"
-          className="box-border w-5/6 h-18 border outline-none rounded-xl text-left text-3xl text-white p-4 pl-8 cursor-text bg-transparent "
-        />
-        <p className="mobNumber text-lg text-gray-500 absolute bottom-3/4 right-1/3  px-2 bg-gray-900">
-          Enter mobile number
-        </p>
+
+        <div className="mobNum box-border w-5/6 border border-white flex flex-col justify-end rounded-xl  relative">
+          <input
+            type="text"
+            name=""
+            value={mobNumber}
+            onChange={handleMobNumber}
+            placeholder="0123456789"
+            maxlength="10"
+            className="box-border w-full  outline-none rounded-xl text-left text-lg text-white p-1 pl-8 bg-gray-900"
+          />
+          <p className="mobNumber box-border w-fit text-md text-slate-50 absolute bottom-9 left-3  px-2 bg-gray-900">
+            Enter mobile number
+          </p>
+        </div>
       </div>
 
-      <p className="confirm box-border text-zinc-500 text-lg tracking-tight mt-2">
+      <p className="confirm box-border text-zinc-500 text-md text-center tracking-tight mt-2 px-4">
         By proceeding you confirm that you are above 18 years of age and agree
         to the{" "}
         <span className="box-border text-slate-300 text-lg font-semibold mx-2 tracking-tight">
