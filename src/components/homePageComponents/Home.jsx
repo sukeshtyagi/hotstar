@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import VerticalNavbar from "../sharedComponents/VerticalNavbar";
 import HorizontalNavbar from "../sharedComponents/HorizontalNavbar";
 import Footer from "../sharedComponents/Footer";

@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <div className="headerContainer box-border w-full xsbp:w-4/5 sbp:3/4 m-auto py-2 rounded-xl flex flex-wrap justify-between items-center sticky top-0 left-0  bg-black">
+    <div className="headerContainer box-border w-full xsbp:w-4/5 sbp:3/4 m-auto py-2 rounded-xl flex flex-wrap justify-between items-center sticky top-0 left-0  bg-black font-serif">
       <div className="leftDiv box-border ml-2 flex justify-start gap-0 items-center p-0 ">
         <XIcon
           className="box-border w-4 m-0 text-white relative top-px"
@@ -25,10 +25,10 @@ function Header() {
 
       <div className="rightDiv box-border h-auto mr-1 flex flex-wrap justify-start items-center gap-2">
         <div
-          className="languageDiv box-border px-1  py-px flex justify-center items-center gap-1 border border-green-500 rounded-lg cursor-pointer bg-gradient-to-r from-blue-500 via-yellow-500 to-red-200"
+          className="languageDiv box-border px-2  py-px flex justify-center items-center gap-1 border border-green-500 rounded-lg cursor-pointer bg-gradient-to-r from-blue-500 via-yellow-500 to-red-200"
           onClick={toggleDropdown}
         >
-          <p className="box-border text-white text-[10px]">{languageSelected}</p>
+          <p className="box-border text-white text-lg">{languageSelected}</p>
           <ChevronDownIcon className="box-border w-4 text-white" />
         </div>
 
@@ -120,7 +120,7 @@ function Header() {
 
         <div className="languageDiv box-border px-3 py-px flex justify-center items-center gap-1 border border-green-500 rounded-lg cursor-pointer bg-gradient-to-r from-blue-500 via-purple-900 to-red-500">
           <button
-            className="login text-white text-[10px]"
+            className="login text-white text-lg"
             onClick={() => {
               navigate("/login");
             }}

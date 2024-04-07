@@ -31,15 +31,15 @@ function PlanDurationCost() {
     setPremiumPlanSelected(true);
   };
   return (
-    <>
-      <div className="planPeriodDiv flex w-6/12 h-16   justify-center gap-8 text-slate-900 bg-zinc-500 m-auto py-2 rounded-3xl">
+    <div className="outerContainer box-border w-screen  sm:w-[610px] flex flex-col items-center gap-4">
+      <div className="planPeriodDiv box-border w-full py-2 flex flex-wrap justify-evenly text-slate-900 bg-gray-600  rounded-xl">
         <div
           className={`quaterly flex items-center justify-start gap-1 cursor-pointer ${
             quaterlyPlanSelected ? "text-white" : ""
           }`}
         >
           <div
-            className="box-border text-3xl cursor-pointer"
+            className="box-border text-2xl cursor-pointer"
             style={{ userSelect: "none", userDrag: "none" }}
             onClick={() => {
               setQuaterlyPlanSelected(true);
@@ -50,7 +50,7 @@ function PlanDurationCost() {
             Quaterly
           </div>
           {quaterlyPlanSelected && (
-            <CheckIcon className="w-8 text-white-900 text-2xl bg-yellow-500 rounded-full" />
+            <CheckIcon className="w-5 bg-yellow-500 rounded-full " />
           )}
         </div>
 
@@ -60,7 +60,7 @@ function PlanDurationCost() {
           }`}
         >
           <p
-            className="box-border text-3xl"
+            className="box-border text-2xl"
             style={{ userSelect: "none", userDrag: "none" }}
             onClick={() => {
               setQuaterlyPlanSelected(false);
@@ -71,7 +71,7 @@ function PlanDurationCost() {
             Yearly
           </p>
           {yearlyPlanSelected && (
-            <CheckIcon className="w-8 text-white-900 text-2xl bg-orange-500 rounded-full" />
+            <CheckIcon className="w-5 bg-orange-500 rounded-full" />
           )}
         </div>
 
@@ -81,21 +81,21 @@ function PlanDurationCost() {
           }`}
         >
           <p
-            className="box-border text-3xl"
+            className="box-border text-2xl"
             style={{ userSelect: "none", userDrag: "none" }}
             onClick={monthlyHandle}
           >
             Monthly
           </p>
           {monthlyPlanSelected && (
-            <CheckIcon className="w-8 text-white-900 text-2xl bg-green-500 rounded-full" />
+            <CheckIcon className="w-5 bg-green-500 rounded-full" />
           )}
         </div>
       </div>
 
-      <div className="costDiv flex justify-evenly h-fit text-white">
+      <div className="costDiv box-border w-full flex flex-wrap justify-center gap-2 text-white">
         <div
-          className={`mobilePlanCost w-56 h-28 box-border flex flex-col justify-evenly gap-1 items-start border rounded-xl border-4 p-2 px-4 cursor-pointer ${
+          className={`mobilePlanCost box-border flex flex-col justify-evenly gap-0 items-start border rounded-xl border-4 p-2 px-4  cursor-pointer ${
             monthlyPlanSelected ? "cursor-not-allowed" : ""
           }
               ${mobilePlanSelected ? "border-slate-50" : "border-zinc-500"}`}
@@ -109,7 +109,7 @@ function PlanDurationCost() {
           }}
         >
           <h3
-            className={`heading box-border text-4xl font-normal ${
+            className={`heading box-border text-2xl font-normal ${
               mobilePlanSelected ? "text-yellow-200 text-white" : ""
             }
                 ${monthlyPlanSelected ? "text-zinc-500" : ""}
@@ -119,12 +119,12 @@ function PlanDurationCost() {
           </h3>
           {mobilePlanSelected && (
             <div className="relative">
-              <CheckIcon className=" absolute bottom-[.6rem] left-32 w-6 h-6 text-white-900 text-2xl bg-pink-500 rounded-full" />
+              <CheckIcon className=" absolute bottom-[14px] left-20 w-4 bg-pink-500 rounded-full" />
             </div>
           )}
           {quaterlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin">
                 &#x20B9;{" "}
               </span>
               149
@@ -134,8 +134,8 @@ function PlanDurationCost() {
             </p>
           )}
           {yearlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin">
                 &#x20B9;{" "}
               </span>
               499
@@ -151,7 +151,7 @@ function PlanDurationCost() {
         </div>
 
         <div
-          className={`superPlanCost w-56 h-28 box-border flex flex-col justify-evenly gap-1 items-start border rounded-xl border-4 p-2 px-4 cursor-pointer 
+          className={`superPlanCost  box-border flex flex-col justify-evenly gap-0 items-start border rounded-xl border-4 p-2 px-4 cursor-pointer
           ${monthlyPlanSelected ? "cursor-not-allowed" : ""}
           ${superPlanSelected ? "border-slate-50" : "border-zinc-500"}`}
           style={{ userSelect: "none", userDrag: "none" }}
@@ -164,7 +164,7 @@ function PlanDurationCost() {
           }}
         >
           <h3
-            className={`heading box-border text-4xl font-normal ${
+            className={`heading box-border text-2xl font-normal ${
               superPlanSelected ? "text-yellow-200 text-white" : ""
             }
                 ${monthlyPlanSelected ? "text-zinc-500" : ""}
@@ -175,12 +175,12 @@ function PlanDurationCost() {
 
           {superPlanSelected && (
             <div className="relative">
-              <CheckIcon className=" absolute bottom-[0.5rem] left-28 w-6 h-6 text-white-900 text-2xl bg-cyan-500 rounded-full" />
+              <CheckIcon className=" absolute bottom-[12px] left-[70px] w-4 bg-cyan-500 rounded-full" />
             </div>
           )}
           {quaterlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin ">
                 &#x20B9;{" "}
               </span>
               299
@@ -190,12 +190,12 @@ function PlanDurationCost() {
             </p>
           )}
           {yearlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin">
                 &#x20B9;{" "}
               </span>
               899
-              <span className="cost box-border text-xl  font-thin">/year</span>
+              <span className="cost box-border text-xl font-thin">/year</span>
             </p>
           )}
           {monthlyPlanSelected && (
@@ -207,10 +207,9 @@ function PlanDurationCost() {
         </div>
 
         <div
-          className={`premiumPlanCost w-56 h-28 box-border flex flex-col justify-evenly gap-1 items-start border rounded-xl  border-4 p-2
-               px-4 cursor-pointer ${
-                 premiumPlanSelected ? "border-slate-50" : "border-zinc-500"
-               }`}
+          className={`premiumPlanCostbox-border flex flex-col justify-evenly gap-0 items-start border rounded-xl border-4 p-2 px-4 cursor-pointer ${
+            premiumPlanSelected ? "border-slate-50" : "border-zinc-500"
+          }`}
           style={{ userSelect: "none", userDrag: "none" }}
           onClick={() => {
             setMobilePlanSelected(false);
@@ -219,7 +218,7 @@ function PlanDurationCost() {
           }}
         >
           <h3
-            className={`heading box-border text-4xl font-normal ${
+            className={`heading box-border text-2xl font-normal ${
               monthlyPlanSelected ? "text-yellow-200" : ""
             }
             ${premiumPlanSelected ? "text-yellow-200 text-white" : ""}
@@ -231,13 +230,13 @@ function PlanDurationCost() {
 
           {premiumPlanSelected && (
             <div className="relative">
-              <CheckIcon className=" absolute bottom-[0.5rem] left-36 w-6 h-6 text-white-900 text-2xl bg-rose-600 rounded-full" />
+              <CheckIcon className=" absolute bottom-[7px] left-[95px] w-4 bg-rose-600 rounded-full" />
             </div>
           )}
 
           {quaterlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin ">
                 &#x20B9;{" "}
               </span>
               499
@@ -247,8 +246,8 @@ function PlanDurationCost() {
             </p>
           )}
           {yearlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin ">
                 &#x20B9;{" "}
               </span>
               1499
@@ -257,8 +256,8 @@ function PlanDurationCost() {
           )}
 
           {monthlyPlanSelected && (
-            <p className="cost box-border text-4xl font-bold">
-              <span className="cost box-border text-xl font-thin relative -top-2">
+            <p className="cost box-border text-2xl font-bold">
+              <span className="cost box-border text-xl font-thin">
                 &#x20B9;{" "}
               </span>
               299
@@ -267,7 +266,7 @@ function PlanDurationCost() {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
