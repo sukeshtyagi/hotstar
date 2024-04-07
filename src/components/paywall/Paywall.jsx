@@ -35,7 +35,7 @@ function Paywall() {
               <div className="item box-border font-bold text-base">Super</div>
               <div className="item box-border font-bold text-base">Premium</div>
 
-              <div className="item box-border  text-right justify-self-end ">
+              <div className="item box-border text-right justify-self-end pr-2">
                 <p>All content </p>
                 <p className="item box-border text-slate-500 justify-self-end">
                   Movies,Live Sports,TV,Specials
@@ -52,7 +52,7 @@ function Paywall() {
                 <CheckIcon className="h-6 text-green-500 text-center" />
               </div>
 
-              <div className="item box-border text-left bg-red-400 justify-self-end">
+              <div className="item box-border text-right justify-self-end">
                 Watch on Tv or Laptop
               </div>
               <div className="item">
@@ -65,7 +65,7 @@ function Paywall() {
                 <CheckIcon className="h-6 text-green-500" />
               </div>
 
-              <div className="item box-border  text-right justify-self-end">
+              <div className="item box-border pr-2 text-right justify-self-end">
                 Add free movies & shoes(except sports)
               </div>
               <div className="item">
@@ -78,14 +78,14 @@ function Paywall() {
                 <CheckIcon className="h-6 text-green-500" />
               </div>
 
-              <div className="item box-border  text-right justify-self-end">
+              <div className="item box-border pr-2 text-right justify-self-end">
                 Number of devices that can be logged in
               </div>
               <div className="item text-xl">1</div>
               <div className="item text-xl">2</div>
               <div className="item text-xl">4</div>
 
-              <div className="item box-border  text-right justify-self-end">
+              <div className="item box-border pr-2 text-right justify-self-end">
                 Max video quality
               </div>
               <div className="item">
@@ -101,7 +101,7 @@ function Paywall() {
                 <p className="text-center text-xl">2160p</p>
               </div>
 
-              <div className="item box-border  text-right justify-self-end">
+              <div className="item box-border pr-2 text-right justify-self-end">
                 <p>Max audio quality</p>
                 <p className="text-slate-500 ">
                   Atmos available on select titles only
