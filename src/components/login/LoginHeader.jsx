@@ -6,7 +6,7 @@ function LoginHeader() {
   const navigate = useNavigate()
 
   return (
-    <div className="header box-border w-full h-fit flex flex-col justify-start mt-4">
+    <div className="header box-border w-full h-fit flex flex-col justify-start ">
      
       <div className="icon box-border w-full flex justify-between">
         <p></p>

@@ -8,14 +8,14 @@ function Login({ child }) {
   return (
     <div className="outerContainer box-border w-screen h-screen overflow-x-hidden">
       <Paywall />
-      <div className="overlay box-border w-screen h-screen fixed top-0 left-0 bg-overlayDense font-serif">
+      <div className="overlay box-border w-screen h-screen fixed top-0 left-0 bg-overlayDense font-serif overflow-y-auto">
         <div
-          className="outerDiv box-border w-full otpbp:h-[490px]  
-        otpbp:w-[450px]  mx-auto  rounded-[2rem] bg-gray-900"
+          className="outerDiv box-border w-full  
+        otpbp:w-[450px]  mx-auto my-16 rounded-[2rem] bg-gray-900 "
         >
           <LoginHeader />
 
-          <div className="bodyDiv box-border w-full flex flex-col items-start gap-2">
+          <div className="bodyDiv box-border w-full flex flex-col items-start mt-16 gap-2">
             <div className="leftDiv box-border w-full h-full flex flex-col items-start gap-0 p-1">
               <div className="imageDiv box-border w-full h-1/2 mx-auto flex justify-center p-2 object-contain">
                 <img
@@ -35,7 +35,7 @@ function Login({ child }) {
               </p>
             </div>
 
-            <div className="centerDiv box-border w-2/3 h-2 flex justify-center items-center p-2 mt-0 mx-auto">
+            <div className="centerDiv box-border w-2/3 h-2 flex justify-center items-center p-2 my-12 mx-auto">
               <div className="upperDiv box-border w-1/2 h-1 text-center bg-gradient-to-t  from-slate-100 from-20% via-zinc-900 via-45% to-100%"></div>
               <div className="segregationDiv box-border w-5 h-8 mx-3 text-zinc-100 my-4">
                 <p className="relative top-2">OR</p>
