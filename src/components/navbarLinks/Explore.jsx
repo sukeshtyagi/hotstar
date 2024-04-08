@@ -6,7 +6,8 @@ import HorizontalNavbar from "../sharedComponents/HorizontalNavbar";
 
 function Explore() {
   return (
-    <div className="exploreContainer bbox-border w-screen flex overflow-y-atuo bg-black">
+    <div className="exploreContainer box-border w-screen flex overflow-y-atuo bg-black">
+      
       <div className="leftDivVerticalNavbar box-border fixed top-0 left-0 z-20 hidden sbp:block bg-black">
         <VerticalNavbar />
       </div>

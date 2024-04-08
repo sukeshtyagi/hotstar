@@ -82,7 +82,7 @@ function Mypage() {
           </div>
 
           <div className="headerRightDiv box-border w-fit h-fit mr-4 flex flex-col items-start text-slate-100">
-            <div className="btnDiv box-border w-full h-fit flex flex-wrap justify-end gap-0 items-center">
+            <div className="btnDiv box-border w-full h-fit flex flex-wrap justify-end gap-1 items-center">
               <button
                 className="btnDiv box-border px-4 py-1.5 text-lg
               bg-gradient-to-r from-blue-700 from-40% to-blue-900 to-90% font-semibold hover:from-blue-700 from-40% hover:to-blue-950 to-80% rounded-xl"
@@ -93,13 +93,13 @@ function Mypage() {
                 Subscribe
               </button>
               <button
-                className="btnDiv box-border flex items-center justift-start gap-1 px-4 py-2 rounded-xl text-base
+                className="btnDiv box-border flex items-center justift-start gap-1 p-2 rounded-xl text-base
               bg-zinc-600 hover:bg-zinc-500 font-semibold "
                 onClick={() => {
                   navigate("/help");
                 }}
               >
-                <CogIcon className="h-6 w-8 text-slate-100" />
+                <CogIcon className="h-6 w-5 text-slate-100" />
                 Help & Settings
               </button>
             </div>
