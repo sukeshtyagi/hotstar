@@ -10,14 +10,13 @@ import Explore from "./components/navbarLinks/Explore";
 import Shows from "./components/navbarLinks/Shows";
 import Movies from "./components/navbarLinks/Movies";
 import Categories from "./components/navbarLinks/Categories";
-import Footer from "./components/sharedComponents/Footer";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<ErrorPage />} />
-        <Route path="/" element={<Footer />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/paywall" element={<Paywall />} />
         <Route path="/login" element={<Login child="getOtp" />} />
