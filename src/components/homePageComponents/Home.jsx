@@ -25,11 +25,11 @@ function Home() {
         <VerticalNavbar />
       </div>
 
-      <div className="leftDivHorizontalNavbar box-border fixed top-0 left-0 my-8 z-20 block sbp:hidden">
+      <div className="leftDivHorizontalNavbar box-border fixed top-0 left-0  z-20 block sbp:hidden">
         <HorizontalNavbar />
       </div>
 
-      <div className="rightDiv box-border mx-auto mt-40 sbp:ml-48 sbp:mr-2 sbp:mt-24 w-4/5 h-full flex flex-col justify-start gap-0 z-0">
+      <div className="rightDiv box-border w-4/5 h-full mx-auto mt-40 sbp:ml-48 sbp:mr-2 sbp:mt-24 flex flex-col justify-start gap-0 z-0">
         <div className="posterDiv p-2 border border-x-yellow-500 border-y-purple-700 z-0">
           <img
             src="/images/common/p3.jpg"

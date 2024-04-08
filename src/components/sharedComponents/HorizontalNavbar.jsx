@@ -17,7 +17,7 @@ function HorizontalNavbar() {
 
   return (
     <div
-      className={`overallContainer box-border w-screen  transition-all duration-300 text-slate-400 caret-transparent flex gap-0 justify-between items-start ${
+      className={`overallContainer box-border w-screen py-6 transition-all duration-300 text-slate-400 caret-transparent flex gap-0 justify-between items-start ${
         isHovered ? "h-screen bg-overlay" : "h-20 bg-black"
       }`}
     >

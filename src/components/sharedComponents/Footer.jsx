@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Footer() {
+function  Footer() {
   const navigate = useNavigate();
   return (
     <div className="container box-border flex flex-col justify-start p-0 h-fit">

@@ -22,6 +22,7 @@ module.exports = {
         otpbp: "450px",
         sbp: "520px",
         wbp: "930px",
+        mpbp: "1130px",
       },
     },
   },
