@@ -1,23 +1,29 @@
 import React from "react";
 import Footer from "../sharedComponents/Footer";
-import Navbar from "../sharedComponents/VerticalNavbar";
 import Cards from "../sharedComponents/Cards";
+import VerticalNavbar from "../sharedComponents/VerticalNavbar";
+import HorizontalNavbar from "../sharedComponents/HorizontalNavbar";
 
 function Explore() {
   return (
-    <div className="exploreContainer box-border w-screen  flex bg-black overflow-y-atuo ">
-      <div className="leftDiv box-border fixed top-0 left-0 z-100">
-        <Navbar />
+    <div className="exploreContainer bbox-border w-screen flex overflow-y-atuo bg-black">
+      <div className="leftDivVerticalNavbar box-border fixed top-0 left-0 z-20 hidden sbp:block bg-black">
+        <VerticalNavbar />
       </div>
-      <div className="rightDiv box-border w-10/12 flex flex-col m-auto ml-44">
-        <div className="header box-border w-full h-1/2 caret-transparent	flex justify-start gap-6 items-center mt-8 bg-gray-700 p-2 text-white rounded-xl">
+
+      <div className="leftDivHorizontalNavbar box-border fixed top-0 left-0 mb-4 z-20 block sbp:hidden">
+        <HorizontalNavbar />
+      </div>
+
+      <div className="rightDiv box-border w-10/12 mx-auto mt-28 sbp:ml-60 sbp:mr-2 sbp:mt-20 h-full flex flex-col justify-start gap-0 z-0">
+        <div className="header box-border w-4/5 mx-auto flex justify-start gap-1 items-center mt-0 bg-gray-700 p-0 text-white rounded-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 ml-4"
+            className="w-6 h-6 ml-1 flex-shrink-0"
           >
             <path
               strokeLinecap="round"
@@ -29,7 +35,7 @@ function Explore() {
           <input
             type="text"
             placeholder="Movies,shows and more"
-            className="box-border h-fit text-3xl text-gray-400 py-3 bg-transparent outline-none caret-slate-50"
+            className="box-border h-fit p-1 flex-grow text-lg text-gray-400 bg-transparent outline-none caret-slate-50"
           />
         </div>
 
