@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../sharedComponents/VerticalNavbar";
 import Footer from "../sharedComponents/Footer";
 import Cards from "../sharedComponents/Cards";
+import VerticalNavbar from "../sharedComponents/VerticalNavbar";
+import HorizontalNavbar from "../sharedComponents/HorizontalNavbar";
 
 function Movies() {
   const videoUrl = "https://www.youtube.com/embed/wd_ainYKVdw";
@@ -13,13 +14,19 @@ function Movies() {
   };
 
   return (
-    <div className="showsContainer box-border w-screen h-screen flex bg-black overflow-y-auto">
-      <div className="leftDiv box-border w-fit fixed top-0 left-0 z-100">
-        <Navbar />
+    <div className="showsContainer box-border w-screen flex overflow-y-atuo bg-black">
+
+      <div className="leftDivVerticalNavbar box-border fixed top-0 left-0 z-20 hidden sbp:block bg-black">
+        <VerticalNavbar />
       </div>
 
-      <div className="rightDiv box-border w-10/12 h-screen flex flex-col m-auto mt-5 ml-44">
-        <div className="header box-border h-fit flex justify-start gap-5 items-start bg-gradient-to-r from-gray-900 from-50% p-1">
+      <div className="leftDivHorizontalNavbar box-border fixed top-0 left-0 mb-4 z-20 block sbp:hidden">
+        <HorizontalNavbar />
+      </div>
+
+      <div className="rightDiv box-border w-10/12 mx-auto mt-28 sbp:ml-60 sbp:mr-2 sbp:mt-20 h-full flex flex-col justify-start gap-0 z-0">
+
+        <div className="header box-border w-fit h-fit flex flex-wrap justify-start gap-5 items-start bg-gradient-to-r from-gray-900 from-50% p-1">
           {trailer && (
             <div className="videoDiv box-border w-full h-96">
               <iframe
